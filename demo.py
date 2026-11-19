@@ -164,7 +164,7 @@ def main():
         with open(os.path.join(DEMO, "DEMO_LOGINS.txt"), "w") as f:
             f.write("ECOCASH SENTINEL DEMO: sign-in details (all data is invented)\n\nReviewers (read-only):   reviewer      password: %s\nFull access (can change): demo.head    password: %s\nSecond approver:          demo.head2   password: %s\nRisk Manager:             demo.manager password: %s\nAdministrator:            admin        password: %s\n" % tuple(logins[k] for k in ("reviewer", "demo.head", "demo.head2", "demo.manager", "admin")))
         open(marker, "w").write("ready")
-    print("=" * 72); print(" EcoCash Sentinel DEMO (invented data)  -  http://127.0.0.1:%d/login" % port); print("-" * 72)
+    print("=" * 72); print(" EcoCash Sentinel DEMO (invented data)  -  http://%s:%d/login" % (config.HOST, port), flush=True); print("-" * 72)
     print(open(os.path.join(DEMO, "DEMO_LOGINS.txt")).read().strip()); print("-" * 72)
     print(" The logins are also saved in demo_data\\DEMO_LOGINS.txt. Press Ctrl+C to stop."); print("=" * 72)
     try:
