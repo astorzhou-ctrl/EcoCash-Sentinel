@@ -1,0 +1,395 @@
+{
+"as_of": "2026-09-17",
+"pages": [
+{
+"grp": "Inflation and prices",
+"page": 1,
+"subtitle": "WEEKLY KPI REPORT   |   Week ending: September 2026",
+"source": "EcoCash Research",
+"tiles": [
+{
+"word": "STABLE",
+"caption": "Inflation environment"
+},
+{
+"word": "MODERATE",
+"caption": "Price-level movement"
+},
+{
+"word": "RESILIENT",
+"caption": "Commodity prices"
+},
+{
+"word": "POSITIVE",
+"caption": "Outlook maintained"
+}
+],
+"bullets": [
+"USD MoM inflation rose to 0.28% in July; food was 0.22% and non-food 0.31%.",
+"ZWG eased to 0.10% as USD accelerated to 0.30%, reversing June's pattern.",
+"USD CPI reached 125.61, up 3.12% year on year.",
+"Gold rebounded to US$4,132/oz; platinum and palladium also edged higher."
+]
+},
+{
+"grp": "Energy and fuel",
+"page": 1,
+"subtitle": "WEEKLY KPI REPORT   |   Energy, fuel and foreign-currency flows",
+"source": "EcoCash Research",
+"tiles": [
+{
+"word": "CONSTRAINED",
+"caption": "Power coverage"
+},
+{
+"word": "ELEVATED",
+"caption": "Fuel-price level"
+},
+{
+"word": "MIXED",
+"caption": "Consumption trends"
+},
+{
+"word": "SURPLUS",
+"caption": "Foreign-currency flows"
+}
+],
+"bullets": [
+"Generation supplies 1,615MW against 2,200MW demand\u2014a 585MW shortfall.",
+"Petrol and diesel held at US$1.96/1.98, below their first-half peaks.",
+"Q1: diesel +20.2%, Jet A1 +19.4%; petrol -6.5% year on year.",
+"Q2 inflows +15.7%; payments +19.9%; the net surplus improved 7.3%."
+]
+},
+{
+"grp": "Currency and markets",
+"page": 1,
+"subtitle": "RBZ \u00b7 ZSE \u00b7 VFEX \u00b7 ZERA   |   17 September 2026",
+"source": "EcoCash Research",
+"tiles": [
+{
+"word": "STABLE",
+"caption": "Exchange rates"
+},
+{
+"word": "DEEPER",
+"caption": "VFEX market"
+},
+{
+"word": "FIRM",
+"caption": "Daily mid-rates"
+},
+{
+"word": "EXPANDING",
+"caption": "Money supply"
+}
+],
+"bullets": [
+"At 15 Sep, ZSE market cap was US$3.76bn versus VFEX at US$8.05bn (2.1\u00d7).",
+"The official rate eased to 26.63 ZiG/US$; the parallel rate held at 33.",
+"31 Jul\u20136 Aug: the USD mid-rate firmed 0.24% to 26.6194.",
+"June M1, M2 and M3 expanded by roughly 11.5% month on month."
+]
+},
+{
+"grp": "Payments sector",
+"page": 1,
+"subtitle": "RBZ \u00b7 ZIMSTAT \u00b7 POTRAZ   |   August 2026",
+"source": "EcoCash Research",
+"tiles": [
+{
+"word": "GROWING",
+"caption": "Access points"
+},
+{
+"word": "DIGITAL",
+"caption": "Banking users"
+},
+{
+"word": "LEADING",
+"caption": "Econet share"
+},
+{
+"word": "STABLE",
+"caption": "Subscriber base"
+}
+],
+"bullets": [
+"Q2 access points edged up to 57,384 merchants, 511 ATMs and 156,664 POS devices.",
+"Debit cards rose 5.3% QoQ to 6.79m; mobile users rose 5.2% to 11.25m.",
+"Prepaid cards slipped 1.0%; internet-banking users increased 4.6%.",
+"Econet led Q1 active lines at 12.93m and 74.8% market share."
+]
+},
+{
+"grp": "Money and credit",
+"page": 1,
+"subtitle": "WEEKLY KPI REPORT   |   Banking, stablecoins and mobile money",
+"source": "EcoCash Research",
+"tiles": [
+{
+"word": "TIGHT",
+"caption": "Credit conditions"
+},
+{
+"word": "WATCH",
+"caption": "Asset quality"
+},
+{
+"word": "RESILIENT",
+"caption": "Stablecoin pegs"
+},
+{
+"word": "GROWING",
+"caption": "Mobile money"
+}
+],
+"bullets": [
+"The policy rate fell to 30%; average lending rose to 43.9%.",
+"NPLs reached 3.64%, still 1.36pp below the 5% benchmark.",
+"USDT dipped to US$0.9988; other stablecoins held near parity.",
+"Q2 mobile-money shares rose to 13.0% by value and 89.1% by volume."
+]
+},
+{
+"grp": "Economy and society",
+"page": 1,
+"subtitle": "WEEKLY KPI REPORT   |   Growth, employment and agriculture",
+"source": "EcoCash Research",
+"tiles": [
+{
+"word": "GROWTH",
+"caption": "GDP outlook"
+},
+{
+"word": "INFORMAL",
+"caption": "Employment mix"
+},
+{
+"word": "CALMER",
+"caption": "Unrest index"
+},
+{
+"word": "RECOVERY",
+"caption": "Agriculture"
+}
+],
+"bullets": [
+"2026 GDP is projected at US$52.0bn, up 14.8% from 2025.",
+"Employment remains 58.5% informal, 35.8% formal and 5.7% household.",
+"Recorded unrest severity fell to 1, from 4\u20135 around 2024\u201325 events.",
+"Soyabeans +129%; maize +29%; tobacco +28%; cotton +26%."
+]
+},
+{
+"grp": "Fraud and security",
+"page": 1,
+"subtitle": "RBZ \u00b7 FAP   |   September and 1\u201330 October 2026",
+"source": "EcoCash Research",
+"tiles": [
+{
+"word": "MODERATE",
+"caption": "Fraud activity"
+},
+{
+"word": "STEADY",
+"caption": "Remittances"
+},
+{
+"word": "DOLLAR",
+"caption": "Transaction mix"
+},
+{
+"word": "RESILIENT",
+"caption": "Capital buffer"
+}
+],
+"bullets": [
+"OTP fraud: 234 cases in September; 88 in 1\u201330 October. SIM swaps: zero in both periods.",
+"Q1 remittances were US$314m\u201412.8% of full-year 2025 inflows.",
+"USD transaction share reached 63.5%; ZiG share eased to 36.5%.",
+"June CAR stood at 24.13%, remaining 12.13pp above the 12% benchmark."
+]
+},
+{
+"grp": "Transaction health",
+"page": 1,
+"subtitle": "WEEKLY KPI REPORT   |   SEPTEMBER 2026",
+"source": "EcoCash Operations",
+"tiles": [
+{
+"word": "BELOW",
+"caption": "Bill payment"
+},
+{
+"word": "GAP",
+"caption": "Bank to wallet"
+},
+{
+"word": "WATCH",
+"caption": "Merchant payment"
+},
+{
+"word": "ACTION",
+"caption": "Balance enquiry"
+}
+],
+"bullets": [
+"Bill payment averaged 76.1% versus a 96.2% target.",
+"Bank-to-wallet averaged 59.0% versus a 67.4% target.",
+"Merchant payment averaged 71.9% versus a 93.0% target.",
+"Balance enquiries averaged 73.9% versus a 100% target."
+]
+},
+{
+"grp": "Transaction health",
+"page": 2,
+"subtitle": "WEEKLY KPI REPORT   |   08 SEPTEMBER 2026",
+"source": "EcoCash Operations",
+"tiles": [
+{
+"word": "BELOW",
+"caption": "Recharge self"
+},
+{
+"word": "WEAK",
+"caption": "Send to mobile"
+},
+{
+"word": "RISK",
+"caption": "Send to bank"
+},
+{
+"word": "ACTION",
+"caption": "Recovery focus"
+}
+],
+"bullets": [
+"Recharge self averaged 82.1% versus a 90.1% target.",
+"Send money averaged 86.8% versus a 93.9% target.",
+"Send to mobile averaged 49.8% versus a 93.9% target.",
+"Send to bank averaged 62.2% versus a 93.9% target."
+]
+},
+{
+"grp": "Transaction health",
+"page": 3,
+"subtitle": "WEEKLY KPI REPORT   |   SEPTEMBER 2026",
+"source": "EcoCash Operations",
+"tiles": [
+{
+"word": "GAP",
+"caption": "ZESA success"
+},
+{
+"word": "STABLE",
+"caption": "Daily range"
+},
+{
+"word": "PEAK",
+"caption": "Evening volume"
+},
+{
+"word": "ACTION",
+"caption": "Service recovery"
+}
+],
+"bullets": [
+"ZESA success averaged 72.7% versus the 100% threshold.",
+"Daily success stayed within a narrow 71.6%\u201374.2% range.",
+"Hourly ZESA Pay volume peaked at 516 around 18:00.",
+"All three hourly series peaked between 18:00 and 19:00."
+]
+},
+{
+"grp": "Transaction failures",
+"page": 1,
+"subtitle": "WEEKLY KPI REPORT   |   Hourly failure analysis",
+"source": "EcoCash Operations",
+"tiles": [
+{
+"word": "FAILURES",
+"caption": "Cash in"
+},
+{
+"word": "PEAK",
+"caption": "Merchant payment"
+},
+{
+"word": "WINDOW",
+"caption": "Bill payment"
+},
+{
+"word": "ACTION",
+"caption": "Send to mobile"
+}
+],
+"bullets": [
+"Cash-in failures peaked at 64 around 09:00.",
+"Merchant-payment failures peaked at 18,764 around 06:00.",
+"Bill-payment failures peaked at 86 around 15:00.",
+"Send-to-mobile failures peaked at 10 around 10:00\u201315:00."
+]
+},
+{
+"grp": "Transaction failures",
+"page": 2,
+"subtitle": "WEEKLY KPI REPORT   |   Hourly failure analysis",
+"source": "EcoCash Operations",
+"tiles": [
+{
+"word": "FAILURES",
+"caption": "Bank to wallet"
+},
+{
+"word": "PEAK",
+"caption": "Balance enquiry"
+},
+{
+"word": "WINDOW",
+"caption": "Send money"
+},
+{
+"word": "ACTION",
+"caption": "Recharge others"
+}
+],
+"bullets": [
+"Bank-to-wallet failures peaked at 5,022 around 18:00.",
+"Balance-enquiry failures peaked at 1,363 around 17:00.",
+"Send-money failures peaked at 2,956 around 16:00.",
+"Recharge-others failures peaked at 2,418 around 18:00."
+]
+},
+{
+"grp": "Transaction failures",
+"page": 3,
+"subtitle": "WEEKLY KPI REPORT   |   Hourly failure analysis",
+"source": "EcoCash Operations",
+"tiles": [
+{
+"word": "FAILURES",
+"caption": "Bill payment"
+},
+{
+"word": "PEAK",
+"caption": "Recharge self"
+},
+{
+"word": "WINDOW",
+"caption": "Send to mobile"
+},
+{
+"word": "ACTION",
+"caption": "Remediation"
+}
+],
+"bullets": [
+"Bill-payment daily totals were 461\u2013589; intraday points peaked at 59.",
+"Merchant-to-subscriber failures peaked at 9 around 20:00.",
+"Recharge-self failures peaked at 5,373 around 18:00.",
+"Send-to-mobile failures peaked at 17 around 13:00\u201318:00."
+]
+}
+]
+}
