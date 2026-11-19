@@ -1,0 +1,2834 @@
+{
+ "suites": [
+  {
+   "name": "COMMAND",
+   "color": "#4C5FD5"
+  },
+  {
+   "name": "RISK",
+   "color": "#2F6FD6"
+  },
+  {
+   "name": "CONTROLS & ASSURANCE",
+   "color": "#17A2B8"
+  },
+  {
+   "name": "EVENTS & FRAUD",
+   "color": "#E0474C"
+  },
+  {
+   "name": "COMPLIANCE & PRIVACY",
+   "color": "#7B5CD6"
+  },
+  {
+   "name": "MANAGEMENT SYSTEMS",
+   "color": "#B8458F"
+  },
+  {
+   "name": "RESILIENCE",
+   "color": "#3BA55C"
+  },
+  {
+   "name": "INTELLIGENCE",
+   "color": "#F0A04B"
+  },
+  {
+   "name": "PLATFORM",
+   "color": "#5B6B7C"
+  }
+ ],
+ "modules": [
+  {
+   "key": "command_center",
+   "name": "Command Center",
+   "suite": "COMMAND",
+   "phase": "P1",
+   "build": "builds_on",
+   "purpose": "The executive landing page. It answers three questions on one screen: where EcoCash stands today, what changed since last quarter, and what needs a decision.",
+   "users": "Board and executives (read); Head of Risk (configure layout and thresholds).",
+   "panels": [
+    "KPI strip: enterprise risks, High, Significant, outside appetite, overdue actions, red KRIs, each with a trend line",
+    "Residual heat map on the ranked matrix with a count in each cell",
+    "Quarterly trend of High and Significant risks and of risks outside appetite",
+    "Top five risks with owner, rating and trend",
+    "KRI status donut and control-effectiveness gauge against the 80% target",
+    "Net loss by month",
+    "Assistant insight cards (when AI is on)"
+   ],
+   "graphs": [
+    [
+     "Residual heat map",
+     "Ranked matrix with counts",
+     "Count of risks per cell using residual likelihood and consequence"
+    ],
+    [
+     "Risk profile trend",
+     "Line and area",
+     "Count of High plus Significant risks and of risks outside appetite at each quarter-end snapshot"
+    ],
+    [
+     "KRI status",
+     "Donut",
+     "KRIs by green, amber and red"
+    ],
+    [
+     "Control effectiveness",
+     "Gauge vs target",
+     "1 minus the weighted average ICE of linked controls, target 80%"
+    ],
+    [
+     "Net loss by month",
+     "Column",
+     "Sum of net loss from incidents and loss events by month"
+    ],
+    [
+     "Headline tiles",
+     "KPI tile with sparkline",
+     "Six headline counts with six-period trend"
+    ]
+   ],
+   "rules": [
+    "Each role lands on its own home page; executives land here",
+    "Every tile opens the records behind it",
+    "The data date is always shown; a tile never shows a figure that cannot be traced",
+    "Filters (business unit, period, category) persist per user"
+   ],
+   "ai": [
+    [
+     "Insight cards summarise the largest movements and cite the records",
+     "Movement table and filters; the Head of Risk writes the commentary"
+    ],
+    [
+     "Question box answers in plain language with sources",
+     "Search, filters and drill-down"
+    ]
+   ],
+   "reqs": [
+    [
+     "Role-based landing page with six headline tiles, each drilling to records",
+     "M",
+     "Partial"
+    ],
+    [
+     "Residual heat map with counts and click-through lists on the adopted matrix",
+     "M",
+     "Built"
+    ],
+    [
+     "Quarter-on-quarter comparison from snapshots",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 2.5.2 Quarterly Risk Report; Appendix I; Power BI pages Top 10 and All Risks."
+  },
+  {
+   "key": "daily_tracker",
+   "name": "Daily Tracker",
+   "suite": "COMMAND",
+   "phase": "P1",
+   "build": "new",
+   "purpose": "The Risk Office's daily workplan and event log in one place. It replaces the spreadsheet task tracker with a live tracker that can be fully automatic, hybrid or fully manual: the system adds tasks and events from risks, actions, KRIs, assessments, audit findings and regulatory dates, and people add anything else.",
+   "users": "Risk Office and every action owner (their own items); Head of Risk and MD (team view).",
+   "panels": [
+    "Six status tiles: total tasks, overdue, due today, due soon, completed, on track",
+    "Task table: task, comment, assignment status, owner, deadline, revised timeline, completion status, e-mail link, days left, source (auto or manual)",
+    "Tracker mode switch: Automatic, Hybrid, Manual",
+    "Event feed for the day: every create, change, alert, approval and export, plus manual notes",
+    "End-of-day summary and automation settings"
+   ],
+   "graphs": [
+    [
+     "Status tiles",
+     "KPI tiles",
+     "Counts of tasks by calculated status"
+    ],
+    [
+     "Task tracker table",
+     "Table with status chips",
+     "All fields above; status and days left are calculated by rule"
+    ],
+    [
+     "Events by hour",
+     "Column",
+     "Events captured per hour today"
+    ],
+    [
+     "Events by type",
+     "Horizontal bars",
+     "Alerts, approvals, tasks, reports, notes"
+    ],
+    [
+     "Week at a glance",
+     "Stacked columns",
+     "Completed, on track, due soon and overdue per weekday"
+    ]
+   ],
+   "rules": [
+    "Days left = deadline minus today. Overdue: below 0. Due today: 0. Due soon: 1 to 3 days (configurable). On track: more than 3. Completed overrides the rest",
+    "A revised timeline needs a reason and an approver and keeps the original deadline for reporting",
+    "Overdue escalates: owner on day 1, manager on day 3, MD on day 7",
+    "Automatic tasks are created from actions, KRI breaches, obligations, assessment campaigns, audit findings and regulatory dates, and show their source",
+    "Import from the existing Excel tracker; recurring tasks weekly, monthly, quarterly"
+   ],
+   "ai": [
+    [
+     "Drafts the end-of-day summary and suggests new deadlines from workload and past delivery",
+     "Template summary and manual deadlines"
+    ],
+    [
+     "Groups related events and flags unusual days",
+     "Filters and the hourly chart"
+    ]
+   ],
+   "reqs": [
+    [
+     "Task tracker with calculated status, days left and revised timelines",
+     "M",
+     "Planned"
+    ],
+    [
+     "Automatic, hybrid and manual modes with auto-created tasks and source links",
+     "M",
+     "Planned"
+    ],
+    [
+     "Daily event feed, digest at 07:30 and end-of-day summary at 17:30",
+     "S",
+     "Planned"
+    ],
+    [
+     "Import from the existing Excel tracker",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "Task Tracker Dashboard supplied by the Risk Office; GRC Policy 2.6; Actions & Issues."
+  },
+  {
+   "key": "performance_analytics",
+   "name": "Performance Analytics",
+   "suite": "COMMAND",
+   "phase": "P1",
+   "build": "builds_on",
+   "purpose": "Reproduces and extends every page of the Power BI risk and control reports on live register data, so the numbers match the register and can be drilled to the record. The Power BI pages are treated as a guide: definitions are made explicit and corrected where the source is inconsistent.",
+   "users": "Head of Risk, Risk Office, executives, internal audit (read); Risk Office (configure pages).",
+   "panels": [
+    "Top 10 risks: average assurance and risk gauges, bars of residual rating against inherent rating, table with value at stake",
+    "All risks and Balanced Scorecard perspectives: grouped tables with totals of residual value, LoA and LoR",
+    "EMV table: inherent, residual and action value per risk with totals",
+    "EMV-i, EMV-r, EMV-a clustered columns for the largest risks",
+    "Top 10 with P2ST2: effectiveness matrix by domain, five gauges, control-count tiles, control count and effectiveness pies",
+    "Control Universe: department slicer, domain buttons, controls count, average effectiveness gauge, domain tiles",
+    "Departmental controls: department by domain matrix of count and effectiveness"
+   ],
+   "graphs": [
+    [
+     "Average level of assurance",
+     "Gauge vs 80%",
+     "LoA = 1 minus sum of EMV-r divided by sum of EMV-i, weighted by EMV-i"
+    ],
+    [
+     "Average level of risk",
+     "Gauge vs 20%",
+     "LoR = sum of EMV-r divided by sum of EMV-i"
+    ],
+    [
+     "Top 10 residual versus inherent",
+     "Bars with markers",
+     "Residual rating (bars) and inherent rating (diamonds) of the ten highest risks"
+    ],
+    [
+     "Top 10 value table",
+     "Table with conditional cells",
+     "ID, rating, description, EMV-r, LoA, LoR; LoA blue at 70% or more"
+    ],
+    [
+     "Balanced Scorecard tables",
+     "Grouped tables",
+     "Per strategic objective: risks, sum of EMV-r, LoA and LoR with totals"
+    ],
+    [
+     "EMV table",
+     "Table with totals",
+     "EMV-i, EMV-r, EMV-a, LoA, LoR per risk"
+    ],
+    [
+     "EMV-i, EMV-r, EMV-a",
+     "Clustered columns",
+     "Three values per risk, ranked by EMV-i"
+    ],
+    [
+     "P2ST2 effectiveness matrix",
+     "Colour-scale matrix",
+     "1 minus average ICE per risk and domain; green at 80%"
+    ],
+    [
+     "Average ICE by domain",
+     "Five gauges vs 80%",
+     "1 minus weighted average ICE per domain over the selected risks"
+    ],
+    [
+     "Control count tiles",
+     "Tiles",
+     "Number of controls per domain over the selected risks"
+    ],
+    [
+     "Control count by domain",
+     "Pie",
+     "Controls per domain"
+    ],
+    [
+     "Control effectiveness by domain",
+     "Pie",
+     "Average effectiveness per domain"
+    ],
+    [
+     "Department slicer and domain buttons",
+     "Slicer",
+     "Filters every control tile and the gauge"
+    ],
+    [
+     "Control Universe gauge",
+     "Gauge vs 80%",
+     "Weighted average effectiveness of controls in the selection"
+    ],
+    [
+     "Departmental controls matrix",
+     "Matrix",
+     "Count and effectiveness per department and domain"
+    ]
+   ],
+   "rules": [
+    "One calculation engine feeds every page so figures reconcile to the register",
+    "Transitional RRR (inherent score times average ICE) is shown until every risk is re-rated on the ranked matrix",
+    "A slicer on one page filters the others",
+    "Any page can be pinned to a Board pack"
+   ],
+   "ai": [
+    [
+     "Narrative summary of each page and explanation of outliers, with citations",
+     "Reader interprets the page; Head of Risk writes the commentary"
+    ],
+    [
+     "Natural-language filters (for example 'BCMS risks above 5M')",
+     "Slicers and filters"
+    ]
+   ],
+   "reqs": [
+    [
+     "All seven pages available with the definitions in this document",
+     "M",
+     "Built"
+    ],
+    [
+     "Slicers and cross-filtering between pages",
+     "S",
+     "Partial"
+    ],
+    [
+     "Pin any page or tile to a Board pack",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "Power BI reports (EcoCash_Risk_Dashboard, P2ST2_Control_Dashboard); GRC Policy 2.3.1; ISMS and BCMS workbook."
+  },
+  {
+   "key": "board_hub",
+   "name": "Board Hub",
+   "suite": "COMMAND",
+   "phase": "P1",
+   "build": "new",
+   "purpose": "Runs the Board and committee cycle: collects decisions needed, builds the pack from live data and records what was decided.",
+   "users": "Board secretary and Head of Risk (prepare); Board and committee members (read, decide).",
+   "panels": [
+    "Approval queue for risks retained above appetite with recommendation and decision buttons",
+    "Next meeting card with date, papers and decisions",
+    "Pack builder with completeness per section",
+    "Quarterly Risk Report preview with the matrix",
+    "Decisions log with owner and due date"
+   ],
+   "graphs": [
+    [
+     "Pack completeness",
+     "Progress bars",
+     "Percentage complete per pack section"
+    ],
+    [
+     "Report preview",
+     "Embedded matrix and key figures",
+     "Same figures as Command Center for the pack date"
+    ],
+    [
+     "Decisions status",
+     "Table with status",
+     "Open, due and closed decisions"
+    ]
+   ],
+   "rules": [
+    "A risk rated High, or above appetite, cannot be retained without a recorded Board decision and expiry date",
+    "Packs are built from a frozen snapshot so the numbers do not move after issue",
+    "Decisions create actions in Actions & Issues"
+   ],
+   "ai": [
+    [
+     "Drafts the narrative for each pack section from the data, for the Head of Risk to edit",
+     "Head of Risk writes the narrative from the preview"
+    ],
+    [
+     "Summarises prior decisions and their status",
+     "Decisions log filters"
+    ]
+   ],
+   "reqs": [
+    [
+     "Approval queue with decision, approver, date and expiry",
+     "M",
+     "Planned"
+    ],
+    [
+     "Pack builder producing PDF and PowerPoint from a frozen snapshot",
+     "M",
+     "Planned"
+    ],
+    [
+     "Decisions log creating actions",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 1.5 governance and 2.4 appetite; Board Risk Committee terms of reference."
+  },
+  {
+   "key": "strategy_map",
+   "name": "Strategy Map",
+   "suite": "COMMAND",
+   "phase": "P4",
+   "build": "builds_on",
+   "purpose": "Shows how strategic objectives are exposed to risk, using the Balanced Scorecard perspectives and the seven strategic objectives from the workbook.",
+   "users": "Executives, Head of Risk, strategy team.",
+   "panels": [
+    "Scorecard-to-risk map: perspective, objective, risk, coloured by worst residual rating",
+    "Exposure by objective",
+    "Objective health table with KPI status and risks outside appetite"
+   ],
+   "graphs": [
+    [
+     "Scorecard to risk map",
+     "Tree map diagram",
+     "Perspectives to objectives to risks; colour is the worst residual rating on the objective"
+    ],
+    [
+     "Exposure by objective",
+     "Horizontal bars",
+     "Count of Significant or High risks per objective"
+    ],
+    [
+     "Objective health",
+     "Table with status chips",
+     "KPI status and risks outside appetite per objective"
+    ]
+   ],
+   "rules": [
+    "Each risk links to exactly one objective",
+    "An objective with no risk, or with a risk outside appetite, is flagged"
+   ],
+   "ai": [
+    [
+     "Suggests the objective a new risk belongs to",
+     "User picks from the objective list"
+    ]
+   ],
+   "reqs": [
+    [
+     "Objective master data with owners, KPIs and targets",
+     "M",
+     "Partial"
+    ],
+    [
+     "Exposure by objective and perspective with drill-down",
+     "M",
+     "Built"
+    ],
+    [
+     "KPI actual feeds for early warning",
+     "C",
+     "Planned"
+    ]
+   ],
+   "links": "ISMS and BCMS workbook (Strategic Coverage Summary); COSO ERM; Power BI BSC pages."
+  },
+  {
+   "key": "risk_appetite",
+   "name": "Risk Appetite",
+   "suite": "COMMAND",
+   "phase": "P1",
+   "build": "new",
+   "purpose": "Turns the Board's appetite into measurable limits and watches actual performance against them.",
+   "users": "Board and Head of Risk (set); executives and owners (monitor).",
+   "panels": [
+    "Appetite statements against actuals with limit markers and status",
+    "Appetite by category with stance (averse, cautious, open) and limit rating",
+    "Breaches and exceptions with actions"
+   ],
+   "graphs": [
+    [
+     "Appetite bullet bars",
+     "Bullet chart",
+     "Actual against Board limit with bands for within, near limit and breach"
+    ],
+    [
+     "Appetite by category",
+     "Table with rating chips",
+     "Stance and the rating level at which a risk is outside appetite"
+    ],
+    [
+     "Breach log",
+     "Table",
+     "Date, metric, action and status of each breach"
+    ]
+   ],
+   "rules": [
+    "Limits are versioned and approved by the Board",
+    "A breach raises an alert and an action automatically",
+    "Appetite is set per category and linked to the response by rating level"
+   ],
+   "ai": [
+    [
+     "Suggests limit values from history and peer norms for discussion",
+     "Limits set from the Risk Office's analysis"
+    ]
+   ],
+   "reqs": [
+    [
+     "Appetite statements with limits, approval and version history",
+     "M",
+     "Planned"
+    ],
+    [
+     "Live comparison with actuals and automatic breach alerts",
+     "M",
+     "Planned"
+    ],
+    [
+     "Appetite by category tied to rating-level response",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 2.4; Board-approved appetite statement."
+  },
+  {
+   "key": "risk_register",
+   "name": "Risk Register",
+   "suite": "RISK",
+   "phase": "P1",
+   "build": "builds_on",
+   "purpose": "The system of record for every risk. It holds every Appendix I field, the inherent and residual ratings on the ranked matrix, the controls and actions behind them, and the full history.",
+   "users": "Risk owners and delegates (own function); Risk Office (all); executives and auditors (read).",
+   "panels": [
+    "Filterable register with ID, risk, category, owner, inherent and residual rating, trend",
+    "Quick view with rating movement on the matrix",
+    "Risk 360 page: rating movement, linked controls with design and operating results, KRIs, loss history, actions, history",
+    "Tabs: Overview, Causes, Controls, KRIs, Incidents, Actions, History"
+   ],
+   "graphs": [
+    [
+     "Rating movement",
+     "Matrix with arrow",
+     "Inherent cell to residual cell for one risk"
+    ],
+    [
+     "KRI sparklines",
+     "Sparkline tiles",
+     "Latest value and six-period trend of each linked KRI"
+    ],
+    [
+     "Loss history",
+     "Column",
+     "Net loss by month attributed to the risk"
+    ],
+    [
+     "Controls table",
+     "Table",
+     "Control, domain, design result, operating result, ICE"
+    ]
+   ],
+   "rules": [
+    "Rating comes from the matrix lookup; residual is re-rated with control evidence",
+    "A risk is complete only when owner, root cause, mitigation, action date and controls exist (policy 2.1)",
+    "Manual override needs a reason and is audited",
+    "Deleted risks go to a recycle bin"
+   ],
+   "ai": [
+    [
+     "Suggests controls from the library and a draft rating with reasons",
+     "Owner picks controls from the library and rates with the guidance panel"
+    ],
+    [
+     "Flags duplicates and inconsistent ratings",
+     "Duplicate search"
+    ]
+   ],
+   "reqs": [
+    [
+     "All Appendix I fields with quarter-on-quarter rating",
+     "M",
+     "Partial"
+    ],
+    [
+     "Ranked-matrix rating with residual re-rating from control evidence",
+     "M",
+     "Planned"
+    ],
+    [
+     "Workflow states with Board approval for High risks",
+     "M",
+     "Planned"
+    ],
+    [
+     "Evidence attachments",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 2.1, 2.2, 2.5.1, Appendix I; ISMS and BCMS workbook."
+  },
+  {
+   "key": "assessment_studio",
+   "name": "Assessment Studio",
+   "suite": "RISK",
+   "phase": "P1",
+   "build": "new",
+   "purpose": "Runs periodic assessments and risk and control self-assessment campaigns across business units with guided scoring and independent challenge.",
+   "users": "Risk owners (assess); Risk Office (launch, review and challenge).",
+   "panels": [
+    "Campaign list with scope, due date, progress and status",
+    "Completion by department",
+    "Guided scoring form on the matrix with prior rating, KRIs and loss history shown",
+    "Review and challenge queue"
+   ],
+   "graphs": [
+    [
+     "Campaign progress",
+     "Progress bars",
+     "Assessments submitted divided by assessments assigned"
+    ],
+    [
+     "Completion by department",
+     "Horizontal progress bars",
+     "Completion percentage per department"
+    ],
+    [
+     "Review queue",
+     "Table",
+     "Proposed versus previous rating and reviewer action"
+    ]
+   ],
+   "rules": [
+    "A change of two or more levels needs a written reason",
+    "Reviewers cannot approve their own assessments",
+    "Closed campaigns create quarterly snapshots"
+   ],
+   "ai": [
+    [
+     "Pre-fills a draft assessment from controls, KRIs and incidents for the owner to adjust",
+     "Owner completes the form"
+    ],
+    [
+     "Highlights ratings that look inconsistent with evidence",
+     "Reviewer compares manually"
+    ]
+   ],
+   "reqs": [
+    [
+     "Campaigns with scope, schedule and progress",
+     "M",
+     "Planned"
+    ],
+    [
+     "Guided matrix scoring with evidence panel",
+     "M",
+     "Planned"
+    ],
+    [
+     "Review and challenge with separation of duties",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 2.1 to 2.2; ISO 31000 assessment."
+  },
+  {
+   "key": "ai_insights",
+   "name": "AI Insights",
+   "suite": "RISK",
+   "phase": "P2",
+   "build": "new",
+   "purpose": "Machine-learning assistance that runs on this computer: finds duplicate and similar risks, suggests controls used on similar risks, and flags unusual indicator movements with a forecast to the red threshold. It only suggests; people decide.",
+   "users": "Risk Office, risk owners, auditors (read-only)",
+   "panels": [
+    "Describe a risk: similar risks, duplicate warning, suggested controls",
+    "Unusual movements: spikes, five-in-a-row trends, forecast to red"
+   ],
+   "graphs": [
+    "Similarity bars",
+    "Indicator sparklines"
+   ],
+   "rules": [
+    "Suggestions never change a record",
+    "Runs locally: no data leaves the computer",
+    "Every search is in the audit trail"
+   ],
+   "ai": [
+    [
+     "Flags duplicates and suggests controls from similar risks",
+     "Duplicate search by hand"
+    ],
+    [
+     "Flags anomalies and forecasts breaches",
+     "Fixed thresholds and alerts"
+    ]
+   ],
+   "reqs": [
+    [
+     "Duplicate and similarity search",
+     "S"
+    ],
+    [
+     "Anomaly and breach-forecast signals",
+     "S"
+    ]
+   ],
+   "links": "GRC Policy 2.6; GSMA fraud typologies for the starter set."
+  },
+  {
+   "key": "heat_map_portfolio",
+   "name": "Heat Map & Portfolio",
+   "suite": "RISK",
+   "phase": "P1",
+   "build": "builds_on",
+   "purpose": "Shows the whole portfolio on the auditor's ranked matrix, comparing inherent, residual and target positions and how risks moved.",
+   "users": "Executives, Head of Risk, owners.",
+   "panels": [
+    "Inherent matrix and residual matrix side by side with counts",
+    "Rating movement this quarter with reasons",
+    "Portfolio by category and level",
+    "Filters: view (inherent, residual, target), business unit, category"
+   ],
+   "graphs": [
+    [
+     "Inherent heat map",
+     "Ranked matrix with counts",
+     "Risks per cell before controls"
+    ],
+    [
+     "Residual heat map",
+     "Ranked matrix with counts",
+     "Risks per cell after controls"
+    ],
+    [
+     "Rating movement",
+     "Table with from and to chips",
+     "Risks whose rank changed since last snapshot"
+    ],
+    [
+     "Portfolio by category and level",
+     "Stacked columns",
+     "Risks per category split by rating level"
+    ]
+   ],
+   "rules": [
+    "A click on a cell lists its risks",
+    "Matrix bands come from configuration"
+   ],
+   "ai": [
+    [
+     "Explains why ratings moved, citing KRIs and incidents",
+     "Movement table with the owner's comment"
+    ]
+   ],
+   "reqs": [
+    [
+     "Inherent, residual and target views with counts and click-through",
+     "M",
+     "Built"
+    ],
+    [
+     "Movement against any earlier snapshot",
+     "S",
+     "Planned"
+    ],
+    [
+     "Category and business-unit filters",
+     "S",
+     "Partial"
+    ]
+   ],
+   "links": "Auditor-recommended matrix; GRC Policy 2.2.4."
+  },
+  {
+   "key": "scenario_lab",
+   "name": "Scenario Lab",
+   "suite": "RISK",
+   "phase": "P4",
+   "build": "new",
+   "purpose": "Tests shocks and treatments before they happen, showing how exposure changes and whether results stay inside appetite.",
+   "users": "Risk Office, CFO, owners.",
+   "panels": [
+    "Scenario library by risk type",
+    "Parameter sliders (volume, detection rate, loss per case, recovery, containment time)",
+    "Result: residual loss and difference to appetite",
+    "Exposure bridge from inherent to residual to treated",
+    "Sensitivity chart"
+   ],
+   "graphs": [
+    [
+     "Exposure bridge",
+     "Waterfall",
+     "Inherent exposure, minus control effect, minus treatment effect, to treated exposure"
+    ],
+    [
+     "Sensitivity",
+     "Tornado",
+     "Change in residual loss when each parameter moves within its range"
+    ],
+    [
+     "Result tiles",
+     "KPI tiles",
+     "Residual loss at the 90th percentile and difference to appetite"
+    ]
+   ],
+   "rules": [
+    "Assumptions are recorded and versioned",
+    "Results are compared automatically with appetite"
+   ],
+   "ai": [
+    [
+     "Suggests parameter ranges from loss history and peers",
+     "Owner enters ranges"
+    ],
+    [
+     "Drafts a scenario narrative",
+     "Owner writes the narrative"
+    ]
+   ],
+   "reqs": [
+    [
+     "Scenario library with parameters and versions",
+     "S",
+     "Planned"
+    ],
+    [
+     "Exposure bridge and sensitivity",
+     "S",
+     "Planned"
+    ],
+    [
+     "Monte Carlo runs with stated assumptions",
+     "C",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 3.7 scenario planning."
+  },
+  {
+   "key": "emerging_radar",
+   "name": "Emerging Radar",
+   "suite": "RISK",
+   "phase": "P4",
+   "build": "new",
+   "purpose": "Spots new risks early by gathering signals from approved sources and plotting them by impact and speed of arrival.",
+   "users": "Risk Office, executives, owners of watched themes.",
+   "panels": [
+    "Bubble radar: impact against velocity, bubble size is proximity",
+    "Signals this week with source and confidence",
+    "Watch list with owner and review date"
+   ],
+   "graphs": [
+    [
+     "Emerging risk radar",
+     "Bubble chart",
+     "Potential impact (y), velocity (x), proximity (size), colour by expected level"
+    ],
+    [
+     "Signal table",
+     "Table",
+     "Signal, source, confidence, action"
+    ],
+    [
+     "Watch list",
+     "Table",
+     "Theme, owner, review date"
+    ]
+   ],
+   "rules": [
+    "A signal becomes a risk only when a person promotes it",
+    "Sources are approved and listed"
+   ],
+   "ai": [
+    [
+     "Curates and ranks signals from approved feeds and drafts the risk statement",
+     "Users add signals manually"
+    ],
+    [
+     "Clusters signals into themes",
+     "Manual tagging"
+    ]
+   ],
+   "reqs": [
+    [
+     "Signal intake from approved sources and manual entry",
+     "C",
+     "Planned"
+    ],
+    [
+     "Radar chart and watch list",
+     "C",
+     "Planned"
+    ],
+    [
+     "Promote a signal to a draft risk",
+     "C",
+     "Planned"
+    ]
+   ],
+   "links": "GSMA alerts, regulator circulars, threat intelligence feeds."
+  },
+  {
+   "key": "control_library_testing",
+   "name": "Control Library & Testing",
+   "suite": "CONTROLS & ASSURANCE",
+   "phase": "P2",
+   "build": "builds_on",
+   "purpose": "Holds the control universe and proves that controls work through design and operating tests, attestations and measured effectiveness.",
+   "users": "Control owners (attest, evidence); Risk Office and internal audit (test, review).",
+   "panels": [
+    "KPI strip: controls, tested in 12 months, average effectiveness, failed tests",
+    "Effectiveness by P2ST2 domain against 80%",
+    "Test results by quarter",
+    "Controls due for testing with design and operating status"
+   ],
+   "graphs": [
+    [
+     "Effectiveness by domain",
+     "Five gauges vs 80%",
+     "1 minus weighted average ICE per domain"
+    ],
+    [
+     "Test results by quarter",
+     "Stacked columns",
+     "Effective, partial, failed and not tested per quarter"
+    ],
+    [
+     "Controls due for testing",
+     "Table",
+     "Control, domain, owner, design, operating, last and next test"
+    ],
+    [
+     "Testing coverage",
+     "KPI tile with sparkline",
+     "Share of key controls tested in 12 months"
+    ]
+   ],
+   "rules": [
+    "Current ICE comes from test results, not self-rating alone",
+    "A failed test creates an action and lowers the linked risks' assurance",
+    "Controls with no owner or overdue tests are flagged"
+   ],
+   "ai": [
+    [
+     "Recommends controls for a risk by similarity of root causes",
+     "Search and filter the library"
+    ],
+    [
+     "Drafts test procedures and sampling",
+     "Tester writes the procedure"
+    ],
+    [
+     "Detects duplicate or weak controls",
+     "Duplicate report"
+    ]
+   ],
+   "reqs": [
+    [
+     "Control library with domain, owner and ICE",
+     "M",
+     "Built"
+    ],
+    [
+     "Design and operating tests feeding current ICE",
+     "M",
+     "Planned"
+    ],
+    [
+     "Quarterly attestation by control owners",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "P2ST2 taxonomy; ISO 27001 Annex A; ISMS and BCMS workbook ICE 2025 and 2026."
+  },
+  {
+   "key": "actions_issues",
+   "name": "Actions & Issues",
+   "suite": "CONTROLS & ASSURANCE",
+   "phase": "P2",
+   "build": "builds_on",
+   "purpose": "One tracker for every action arising from risks, audits, incidents, compliance and Board decisions, with deadlines and escalation.",
+   "users": "Action owners; Risk Office; Board secretary.",
+   "panels": [
+    "KPI strip: open, on time, overdue, average days to close",
+    "Kanban board by status",
+    "Ageing of open actions",
+    "Actions by source"
+   ],
+   "graphs": [
+    [
+     "Action board",
+     "Kanban",
+     "Cards by status with owner and due date"
+    ],
+    [
+     "Ageing",
+     "Columns",
+     "Open actions by age band"
+    ],
+    [
+     "Actions by source",
+     "Donut",
+     "Risk treatment, audit, incident, compliance"
+    ],
+    [
+     "On-time rate",
+     "KPI tile",
+     "Closed on time divided by closed"
+    ]
+   ],
+   "rules": [
+    "Overdue actions escalate to the manager, then the Head of Risk, then the MD",
+    "Closing an action may prompt a control retest"
+   ],
+   "ai": [
+    [
+     "Suggests owners and due dates from workload and history",
+     "Requester assigns"
+    ],
+    [
+     "Summarises overdue items for the weekly review",
+     "Overdue filter"
+    ]
+   ],
+   "reqs": [
+    [
+     "Single action tracker with source links",
+     "M",
+     "Partial"
+    ],
+    [
+     "Reminders and escalation rules",
+     "M",
+     "Planned"
+    ],
+    [
+     "Kanban and ageing views",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 2.6; ISO 27001 clause 10; ISO 22301 clause 10."
+  },
+  {
+   "key": "audit_workspace",
+   "name": "Audit Workspace",
+   "suite": "CONTROLS & ASSURANCE",
+   "phase": "P2",
+   "build": "new",
+   "purpose": "Supports internal audit with a risk-based plan, findings, grades and a view of assurance across the three lines.",
+   "users": "Internal audit (manage); Audit Committee (read); owners (respond).",
+   "panels": [
+    "Audit plan",
+    "Findings by grade",
+    "Open findings with risk link, owner, due date, age",
+    "Assurance coverage by risk area"
+   ],
+   "graphs": [
+    [
+     "Audit plan",
+     "Gantt",
+     "Engagements by month"
+    ],
+    [
+     "Findings by grade",
+     "Stacked columns",
+     "Good, satisfactory, less than satisfactory, unsatisfactory per quarter"
+    ],
+    [
+     "Assurance coverage",
+     "Matrix of dots",
+     "Which line covers which risk area"
+    ],
+    [
+     "Findings ageing",
+     "Table",
+     "Open findings with days open"
+    ]
+   ],
+   "rules": [
+    "Findings link to risks and controls and lower assurance while open",
+    "Internal audit has read-only access to the rest of the platform"
+   ],
+   "ai": [
+    [
+     "Suggests audit focus from risk movements and control failures",
+     "Plan built by the audit team"
+    ],
+    [
+     "Drafts finding wording from evidence",
+     "Auditor writes findings"
+    ]
+   ],
+   "reqs": [
+    [
+     "Audit plan, engagements and findings with grades",
+     "M",
+     "Planned"
+    ],
+    [
+     "Link findings to risks and controls",
+     "S",
+     "Planned"
+    ],
+    [
+     "Read-only auditor role",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 1.7 Internal audit (grades G, S, LS, U)."
+  },
+  {
+   "key": "weekly_kpi",
+   "name": "Weekly KPI",
+   "suite": "EVENTS & FRAUD",
+   "phase": "P2",
+   "build": "new",
+   "purpose": "The weekly KPI report as a live module: economic, market, payments-sector, fraud and transaction-health indicators, each with its as-of date and source, updated manually, by import or automatically, and downloadable in Excel.",
+   "users": "Risk Office; Heads of Function and the MD (read and download).",
+   "panels": [
+    "Weekly report by group with latest value, previous value, change, target and status",
+    "As-of date selector, defaulting to the latest data",
+    "Entry and import of readings",
+    "Sources and automation: feeds, internal measures, refresh log"
+   ],
+   "graphs": [
+    [
+     "Indicator row",
+     "Value with sparkline",
+     "Latest value, change and the last twelve readings"
+    ],
+    [
+     "Trend",
+     "Line chart",
+     "Any indicator over time"
+    ]
+   ],
+   "rules": [
+    "Every value shows its as-of date, source and how it was captured (manual, import, feed or Sentinel)",
+    "A value older than its reporting frequency allows is flagged stale",
+    "Automatic feeds only reach hosts the administrator has approved",
+    "The Excel report carries the same figures, the history and the commentary"
+   ],
+   "ai": [
+    [
+     "Drafts the weekly commentary from the movements",
+     "Commentary is written by the Risk Office"
+    ]
+   ],
+   "reqs": [
+    [
+     "Weekly report with as-of date and stale flags",
+     "M",
+     "Planned"
+    ],
+    [
+     "Manual entry, Excel/CSV import and automatic feeds",
+     "M",
+     "Planned"
+    ],
+    [
+     "Excel download of the report, history and commentary",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 2.5 and 2.6 (risk reporting and monitoring); the existing Weekly KPI Report."
+  },
+  {
+   "key": "kri_monitor",
+   "name": "KRI Monitor",
+   "suite": "EVENTS & FRAUD",
+   "phase": "P2",
+   "build": "new",
+   "purpose": "Gives early warning: key risk indicators with thresholds, feeds, alerts and history, linked to risks and appetite.",
+   "users": "Risk owners and Heads of Function; Risk Office.",
+   "panels": [
+    "Indicator tiles with value, status, sparkline and thresholds",
+    "Alerts with who was notified and the action",
+    "Twelve-month red-amber-green strip"
+   ],
+   "graphs": [
+    [
+     "KRI tiles",
+     "KPI tile with sparkline",
+     "Latest value, six-period trend, amber and red thresholds"
+    ],
+    [
+     "RAG strip",
+     "Colour strip",
+     "Monthly status of each KRI for twelve months"
+    ],
+    [
+     "Alerts",
+     "Table",
+     "Time, KRI, status, people notified, action"
+    ],
+    [
+     "KRI status",
+     "Donut",
+     "Green, amber, red counts"
+    ]
+   ],
+   "rules": [
+    "Every High or Significant risk has at least one KRI",
+    "Red status opens an action and notifies the owner and the Head of Risk",
+    "Feeds update readings automatically; manual entry remains"
+   ],
+   "ai": [
+    [
+     "Forecasts breaches and flags anomalies",
+     "Fixed thresholds and alerts"
+    ],
+    [
+     "Suggests KRIs for a new risk from similar risks",
+     "Owner defines KRIs"
+    ]
+   ],
+   "reqs": [
+    [
+     "KRI library with thresholds and owners",
+     "M",
+     "Planned"
+    ],
+    [
+     "Automatic feeds and manual entry",
+     "M",
+     "Planned"
+    ],
+    [
+     "Alerts and escalation",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 2.6; GSMA fraud typologies for the starter set."
+  },
+  {
+   "key": "incidents_losses",
+   "name": "Incidents & Losses",
+   "suite": "EVENTS & FRAUD",
+   "phase": "P2",
+   "build": "new",
+   "purpose": "Captures incidents, near misses and losses, links them to the risks and controls that failed, and runs the statutory clock for personal-data breaches.",
+   "users": "All staff (report); incident managers; Risk Office; DPO.",
+   "panels": [
+    "KPI strip: open incidents, net loss, near misses",
+    "Loss by category",
+    "Net loss by month",
+    "Recent incidents with severity, loss and status",
+    "Regulatory clock card"
+   ],
+   "graphs": [
+    [
+     "Loss by category",
+     "Horizontal bars",
+     "Net loss by event category over six months"
+    ],
+    [
+     "Net loss by month",
+     "Column",
+     "Sum of net loss per month"
+    ],
+    [
+     "Regulatory clock",
+     "Countdown with progress bar",
+     "Time left to the 24-hour notice"
+    ],
+    [
+     "Incident table",
+     "Table",
+     "ID, incident, type, severity, loss, status"
+    ]
+   ],
+   "rules": [
+    "Every event links to a risk and a control or is flagged",
+    "A personal-data breach starts the 24-hour clock automatically",
+    "A closed event prompts re-assessment of linked risks"
+   ],
+   "ai": [
+    [
+     "Classifies events and suggests root cause and linked controls",
+     "Reporter classifies using the taxonomy"
+    ],
+    [
+     "Drafts the regulator notice for review",
+     "DPO drafts the notice"
+    ]
+   ],
+   "reqs": [
+    [
+     "Event capture with loss amounts and root cause",
+     "M",
+     "Planned"
+    ],
+    [
+     "Link to risks and controls with re-assessment prompt",
+     "M",
+     "Planned"
+    ],
+    [
+     "24-hour breach clock",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GSMA fraud typologies; Cyber and Data Protection Act section 19 and SI 155 of 2024."
+  },
+  {
+   "key": "fraud_intelligence",
+   "name": "Fraud Intelligence",
+   "suite": "EVENTS & FRAUD",
+   "phase": "P2",
+   "build": "new",
+   "purpose": "Turns mobile-money fraud alerts and cases into insight: typologies, agent hotspots, SIM-swap trends and recovery.",
+   "users": "Head of Compliance and ML/CTF (fraud sits here) and analysts; Risk Office; executives.",
+   "panels": [
+    "KPI strip: fraud rate, SIM-swap attempts, recovery rate, time to contain",
+    "Typology mix",
+    "Case pipeline",
+    "Agent hotspots",
+    "SIM-swap attempts against thresholds",
+    "Linked risks and controls"
+   ],
+   "graphs": [
+    [
+     "Typology mix",
+     "Donut",
+     "Alerts by GSMA fraud typology"
+    ],
+    [
+     "Case pipeline",
+     "Funnel",
+     "Detected, investigating, confirmed, recovered"
+    ],
+    [
+     "Agent hotspots",
+     "Horizontal bars",
+     "Cases per agent cluster"
+    ],
+    [
+     "SIM-swap attempts",
+     "Line with threshold lines",
+     "Attempts per day against amber and red thresholds"
+    ],
+    [
+     "Fraud rate",
+     "KPI tile",
+     "Fraud loss as a percentage of transaction value against the limit"
+    ]
+   ],
+   "rules": [
+    "Thresholds come from KRI Monitor and appetite",
+    "Hotspot lists open case workbenches"
+   ],
+   "ai": [
+    [
+     "Detects clusters and early patterns and drafts a hotspot brief",
+     "Analysts filter and chart manually"
+    ],
+    [
+     "Suggests control improvements from case outcomes",
+     "Post-case review"
+    ]
+   ],
+   "reqs": [
+    [
+     "Typology taxonomy and case pipeline",
+     "S",
+     "Planned"
+    ],
+    [
+     "Agent hotspot analytics",
+     "S",
+     "Planned"
+    ],
+    [
+     "Link to risks, controls and KRIs",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GSMA fraud typologies; fraud and AML monitoring system feed."
+  },
+  {
+   "key": "speak_up_cases",
+   "name": "Speak-Up Cases",
+   "suite": "EVENTS & FRAUD",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "Receives and handles tip-offs safely, with restricted access, service levels and anonymised themes that feed the register.",
+   "users": "Case officers (restricted); Head of Risk and Audit Committee (themes only).",
+   "panels": [
+    "KPI strip: open cases, days to close, substantiated, anonymous",
+    "Cases by theme",
+    "Case queue (restricted)",
+    "Handling rules"
+   ],
+   "graphs": [
+    [
+     "Cases by theme",
+     "Horizontal bars",
+     "Cases per theme"
+    ],
+    [
+     "Case queue",
+     "Table",
+     "Case, theme, received, assigned, status"
+    ],
+    [
+     "Days to close",
+     "KPI tile with sparkline",
+     "Average days from receipt to closure"
+    ]
+   ],
+   "rules": [
+    "Reporter identity is hidden from all but the case officer",
+    "Access is reviewed monthly",
+    "Themes feed risks without personal details"
+   ],
+   "ai": [
+    [
+     "Suggests theme and priority from the report text (redacted)",
+     "Case officer classifies"
+    ]
+   ],
+   "reqs": [
+    [
+     "Restricted case workflow",
+     "C",
+     "Planned"
+    ],
+    [
+     "Anonymised themes to the register",
+     "C",
+     "Planned"
+    ],
+    [
+     "Service levels and reporting",
+     "C",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 1.5 tip-offs programme."
+  },
+  {
+   "key": "obligations_hub",
+   "name": "Obligations Hub",
+   "suite": "COMPLIANCE & PRIVACY",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "Records every legal and regulatory obligation, who owns it, the evidence and the monthly status, seeded from the 24 laws in Appendix II plus the data protection law.",
+   "users": "Compliance Officer (manage); Heads of Function (attest); MD and auditors (read).",
+   "panels": [
+    "KPI strip: obligations, compliant, exceptions, statements received",
+    "Obligations register with owner, status, next due, evidence",
+    "Status donut",
+    "Regulatory calendar"
+   ],
+   "graphs": [
+    [
+     "Compliance status",
+     "Donut",
+     "Compliant, partial, exception"
+    ],
+    [
+     "Obligations register",
+     "Table with status chips",
+     "Act or regulator, owner, status, due, evidence"
+    ],
+    [
+     "Regulatory calendar",
+     "Date cards",
+     "Next statutory dates"
+    ],
+    [
+     "Statement progress",
+     "KPI tile",
+     "Monthly statements received divided by expected"
+    ]
+   ],
+   "rules": [
+    "Each obligation has an owner and a monthly statement",
+    "An exception creates an action and, if material, an incident"
+   ],
+   "ai": [
+    [
+     "Summarises new legislation and maps clauses to existing obligations",
+     "Compliance Officer reads and maps"
+    ],
+    [
+     "Drafts the monthly compliance statement for review",
+     "Owner writes it"
+    ]
+   ],
+   "reqs": [
+    [
+     "Obligations register seeded with the 25 entries",
+     "M",
+     "Planned"
+    ],
+    [
+     "Monthly statements from Heads of Function",
+     "M",
+     "Planned"
+    ],
+    [
+     "Calendar with reminders",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy section 4 and Appendix II; RBZ, POTRAZ and other regulators."
+  },
+  {
+   "key": "regulatory_change",
+   "name": "Regulatory Change",
+   "suite": "COMPLIANCE & PRIVACY",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "Tracks new and changing regulation from notice to updated controls.",
+   "users": "Compliance Officer; owners of affected obligations.",
+   "panels": [
+    "KPI strip: changes tracked, assessed, awaiting, overdue",
+    "Regulatory change log with regulator, effective date, impact, owner",
+    "Effective dates timeline",
+    "Change-to-control flow"
+   ],
+   "graphs": [
+    [
+     "Change log",
+     "Table with impact chips",
+     "Change, regulator, effective date, impact, owner, status"
+    ],
+    [
+     "Effective dates",
+     "Gantt",
+     "Effective dates of tracked changes"
+    ],
+    [
+     "Assessment status",
+     "KPI tiles",
+     "Assessed versus awaiting"
+    ]
+   ],
+   "rules": [
+    "A change is closed only when obligations, controls and policies are updated and the owner attests"
+   ],
+   "ai": [
+    [
+     "Reads circulars, summarises and proposes affected obligations",
+     "Compliance Officer reads and proposes"
+    ]
+   ],
+   "reqs": [
+    [
+     "Change log with impact assessment",
+     "S",
+     "Planned"
+    ],
+    [
+     "Link to obligations and controls",
+     "S",
+     "Planned"
+    ],
+    [
+     "Effective-date calendar",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "Regulator circulars; GRC Policy section 4."
+  },
+  {
+   "key": "privacy_breach_clock",
+   "name": "Privacy & Breach Clock",
+   "suite": "COMPLIANCE & PRIVACY",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "Meets data-protection duties: the 24-hour notice to POTRAZ, the 72-hour notice to data subjects when risk is high, DPIAs, processing records and subject requests.",
+   "users": "DPO and privacy team; incident managers; auditors.",
+   "panels": [
+    "Active breach timeline with notice deadlines",
+    "Licence status, DPIAs, processing-record coverage, subject requests",
+    "Processing activities with basis, DPIA and owner",
+    "Breach history"
+   ],
+   "graphs": [
+    [
+     "Breach timeline",
+     "Timeline",
+     "Aware, assessed, POTRAZ notice, data-subject notice, close"
+    ],
+    [
+     "Breach history",
+     "Column",
+     "Breaches per month for twelve months"
+    ],
+    [
+     "Processing activities",
+     "Table",
+     "System, data, lawful basis, DPIA, owner"
+    ],
+    [
+     "Coverage tiles",
+     "KPI tiles",
+     "DPIAs complete, records coverage, requests and average days"
+    ]
+   ],
+   "rules": [
+    "The clock starts when the incident is marked as a personal-data breach",
+    "Notices are generated from templates and logged"
+   ],
+   "ai": [
+    [
+     "Drafts notices and DPIA sections from the incident and system records",
+     "DPO uses templates"
+    ],
+    [
+     "Finds personal data in uploaded documents for redaction",
+     "Manual redaction"
+    ]
+   ],
+   "reqs": [
+    [
+     "24-hour and 72-hour breach clocks",
+     "M",
+     "Planned"
+    ],
+    [
+     "DPIA tracker and processing records",
+     "S",
+     "Planned"
+    ],
+    [
+     "Subject request workflow",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "Cyber and Data Protection Act [Chapter 12:07]; SI 155 of 2024."
+  },
+  {
+   "key": "policy_hub",
+   "name": "Policy Hub",
+   "suite": "COMPLIANCE & PRIVACY",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "Controls policies: versions, reviews, attestations and links to the risks and obligations they support.",
+   "users": "Policy owners; all staff (attest); Compliance Officer.",
+   "panels": [
+    "KPI strip: policies, reviewed in 12 months, attested, overdue",
+    "Policy library with version, owner, next review, attestation",
+    "Status donut"
+   ],
+   "graphs": [
+    [
+     "Policy status",
+     "Donut",
+     "Current versus due for review"
+    ],
+    [
+     "Attestation",
+     "Progress bars",
+     "Staff who have attested per policy"
+    ],
+    [
+     "Policy library",
+     "Table",
+     "Policy, version, owner, next review"
+    ]
+   ],
+   "rules": [
+    "Annual review reminder to the owner",
+    "Cross-references are checked automatically"
+   ],
+   "ai": [
+    [
+     "Checks policies against obligations and flags gaps",
+     "Owner reviews manually"
+    ]
+   ],
+   "reqs": [
+    [
+     "Policy library with versions and reviews",
+     "S",
+     "Planned"
+    ],
+    [
+     "Attestation campaigns",
+     "S",
+     "Planned"
+    ],
+    [
+     "Links to obligations and controls",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy; ISO 27001 clause 5.2; ISO 22301 clause 5.2; ISO 42001 clause 5.2."
+  },
+  {
+   "key": "standards_hub",
+   "name": "Standards Hub",
+   "suite": "MANAGEMENT SYSTEMS",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "A cross-standard view of the three management systems (ISO/IEC 27001, ISO 22301, ISO/IEC 42001). All three share the common clause structure 4 to 10, so conformance, audits, nonconformities and certification can be seen side by side.",
+   "users": "Head of Risk, CISO, BCM lead, AI owner, certification auditors (read).",
+   "panels": [
+    "KPI strip: standards in scope, clause conformance, open nonconformities, internal audits",
+    "Clause conformance heat grid by standard (clauses 4 to 10)",
+    "Risks by standard on the ranked matrix",
+    "Certification and audit calendar",
+    "Nonconformities by status"
+   ],
+   "graphs": [
+    [
+     "Clause conformance grid",
+     "Colour-scale matrix",
+     "Conformance percentage per clause and standard from clause checklists and evidence"
+    ],
+    [
+     "Risks by standard",
+     "Stacked columns",
+     "Risks per standard split by rating level"
+    ],
+    [
+     "Certification calendar",
+     "Gantt",
+     "Stage audits, surveillance audits and management reviews"
+    ],
+    [
+     "Nonconformities by status",
+     "Stacked columns",
+     "Closed, in progress, open and overdue per standard"
+    ]
+   ],
+   "rules": [
+    "One shared audit trail, action tracker and document control across the three standards",
+    "A nonconformity creates an action and may lower a linked control's rating",
+    "Management review packs are built from the hub"
+   ],
+   "ai": [
+    [
+     "Maps documents and records to clauses and flags missing evidence",
+     "Auditor maps evidence manually"
+    ],
+    [
+     "Drafts the management review summary",
+     "Manager writes it"
+    ]
+   ],
+   "reqs": [
+    [
+     "Clause checklists and conformance scoring for three standards",
+     "M",
+     "Planned"
+    ],
+    [
+     "Nonconformity and corrective action workflow",
+     "M",
+     "Planned"
+    ],
+    [
+     "Management review pack and certification calendar",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "ISO/IEC 27001:2022; ISO 22301:2019; ISO/IEC 42001:2023 (common structure, clauses 4 to 10)."
+  },
+  {
+   "key": "isms_iso_27001",
+   "name": "ISMS (ISO 27001)",
+   "suite": "MANAGEMENT SYSTEMS",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "The workspace for the information security management system. It holds the information security risk assessment, risk treatment and Statement of Applicability against ISO 27001:2022 Annex A, using the 18 ISMS objectives and risks from the workbook.",
+   "users": "CISO and security team; Risk Office; internal and certification auditors.",
+   "panels": [
+    "KPI strip: ISMS risks, inherent exposure, assurance, Annex A controls implemented, nonconformities, objectives on track",
+    "Statement of Applicability by Annex A theme (organizational, people, physical, technological)",
+    "Control effectiveness by P2ST2 domain from the workbook",
+    "ISMS risk register with largest exposures, owners, controls and status"
+   ],
+   "graphs": [
+    [
+     "Statement of Applicability",
+     "Stacked columns",
+     "Annex A controls per theme by status: implemented, partial, planned, not applicable"
+    ],
+    [
+     "Control effectiveness by domain",
+     "Five gauges vs 80%",
+     "1 minus weighted average ICE of ISMS controls per domain"
+    ],
+    [
+     "ISMS exposure",
+     "KPI tiles",
+     "Sum of EMV-i and level of assurance for the 18 ISMS risks"
+    ],
+    [
+     "ISMS risk register",
+     "Table",
+     "Objective, risk, owner, EMV-i, LoA, controls, status"
+    ],
+    [
+     "Objective achievement",
+     "KPI tile",
+     "ISMS objectives on track divided by total"
+    ]
+   ],
+   "rules": [
+    "Each risk is assessed on the ranked matrix and linked to treatments and Annex A controls (clause 6.1.2 and 6.1.3)",
+    "The Statement of Applicability is generated from control status and justification and is versioned",
+    "Residual risk accepted above appetite needs approval by the risk owner and the Board (High)"
+   ],
+   "ai": [
+    [
+     "Suggests Annex A controls for a risk and drafts applicability justifications",
+     "Owner selects controls from Annex A"
+    ],
+    [
+     "Pre-fills the risk assessment from asset, threat and vulnerability data",
+     "Owner completes the assessment"
+    ]
+   ],
+   "reqs": [
+    [
+     "ISMS register of 18 risks with owners, EMV and controls",
+     "M",
+     "Partial"
+    ],
+    [
+     "Statement of Applicability for Annex A with justification and versions",
+     "M",
+     "Planned"
+    ],
+    [
+     "Risk treatment plan linked to Annex A controls",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "ISO/IEC 27001:2022 clauses 6.1.2, 6.1.3, 9.2, 9.3, 10 and Annex A; ISMS and BCMS workbook."
+  },
+  {
+   "key": "bcms_iso_22301",
+   "name": "BCMS (ISO 22301)",
+   "suite": "MANAGEMENT SYSTEMS",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "The workspace for the business continuity management system. It holds the BCMS risk assessment, business impact analysis, strategies, plans and exercises against ISO 22301:2019, using the 15 BCMS objectives and risks from the workbook.",
+   "users": "BCM lead and coordinators; COO; Risk Office; auditors.",
+   "panels": [
+    "KPI strip: BCMS risks, inherent exposure, assurance, BIA complete, exercises done, RTO gaps",
+    "Business impact analysis with RTO and RPO against achieved",
+    "Recovery capability gauges",
+    "Exercise programme",
+    "BCMS risk register with largest exposures"
+   ],
+   "graphs": [
+    [
+     "Business impact analysis",
+     "Table with status chips",
+     "Process, RTO, achieved, RPO, achieved, status"
+    ],
+    [
+     "Recovery capability",
+     "Two gauges vs 90%",
+     "Share of critical processes meeting RTO and RPO"
+    ],
+    [
+     "Exercise programme",
+     "Gantt",
+     "Exercises by month and type"
+    ],
+    [
+     "BCMS exposure",
+     "KPI tiles",
+     "Sum of EMV-i and level of assurance for the 15 BCMS risks"
+    ],
+    [
+     "BCMS risk register",
+     "Table",
+     "Objective, risk, owner, EMV-i, LoA, controls, status"
+    ]
+   ],
+   "rules": [
+    "BIA results set recovery targets used by plans and exercises (clause 8.2.2 and 8.4)",
+    "Exercise gaps create actions and lower recovery capability until closed",
+    "Critical suppliers are linked to Third-Party Risk"
+   ],
+   "ai": [
+    [
+     "Drafts BIA entries from process descriptions and dependency records",
+     "BCM coordinator completes the BIA"
+    ],
+    [
+     "Proposes exercise scenarios from recent incidents",
+     "BCM lead designs scenarios"
+    ]
+   ],
+   "reqs": [
+    [
+     "BIA with RTO, RPO and dependencies",
+     "M",
+     "Planned"
+    ],
+    [
+     "BCMS register of 15 risks with owners, EMV and controls",
+     "M",
+     "Partial"
+    ],
+    [
+     "Exercise programme with gaps and actions",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "ISO 22301:2019 clauses 8.2 to 8.6, 9, 10; GRC Policy section 5; ISMS and BCMS workbook."
+  },
+  {
+   "key": "aims_iso_42001",
+   "name": "AIMS (ISO 42001)",
+   "suite": "MANAGEMENT SYSTEMS",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "The workspace for the AI management system. It keeps the inventory of every AI system EcoCash builds or buys, assesses AI risk and the impact on people, and tracks the 38 Annex A controls of ISO/IEC 42001:2023.",
+   "users": "AI owner, Head of Risk, data and model owners, DPO, auditors.",
+   "panels": [
+    "KPI strip: AI systems, impact assessments, Annex A implemented, AI risks above appetite, AI incidents, human oversight",
+    "AI system inventory with stage, risk rating, impact assessment, human oversight, owner",
+    "AI risk sources (ISO 42001 Annex C themes)",
+    "Annex A coverage by the nine control areas",
+    "Model health: accuracy and drift",
+    "System detail: impact assessment, monitoring, Annex A controls, incidents"
+   ],
+   "graphs": [
+    [
+     "AI system inventory",
+     "Table with rating chips",
+     "System, stage, rating on the ranked matrix, impact assessment, oversight, owner"
+    ],
+    [
+     "AI risk sources",
+     "Horizontal bars",
+     "AI risks by theme: bias, drift, privacy, explainability, security, third party"
+    ],
+    [
+     "Annex A coverage",
+     "Stacked columns",
+     "Controls per area by status: implemented, partial, planned"
+    ],
+    [
+     "Model health",
+     "Line",
+     "Precision and drift index by month"
+    ],
+    [
+     "Fairness and drift monitors",
+     "Sparklines",
+     "Fairness gap, accuracy and drift for one system"
+    ],
+    [
+     "Impact assessment table",
+     "Table",
+     "Dimension, finding and level for one system"
+    ]
+   ],
+   "rules": [
+    "No AI system goes live without an owner, risk rating, impact assessment and defined human oversight",
+    "A rating of High, or a failed fairness threshold, triggers Board Risk Committee review",
+    "The platform's own AI features are registered here"
+   ],
+   "ai": [
+    [
+     "Drafts impact assessment text and proposes Annex A controls from the system profile",
+     "AI owner writes the assessment and selects controls"
+    ],
+    [
+     "Watches monitors and flags drift or fairness breaches",
+     "Owner reviews monitor charts on a schedule"
+    ]
+   ],
+   "reqs": [
+    [
+     "AI system register with risk rating and impact assessment",
+     "M",
+     "Planned"
+    ],
+    [
+     "Annex A control tracking for 38 controls in 9 areas",
+     "M",
+     "Planned"
+    ],
+    [
+     "Monitors for accuracy, fairness and drift",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "ISO/IEC 42001:2023 clauses 6.1.2 to 6.1.4, 8.2 to 8.4, Annex A, Annex C; NIST AI RMF; GRC Policy."
+  },
+  {
+   "key": "bcm_studio",
+   "name": "BCM Studio",
+   "suite": "RESILIENCE",
+   "phase": "P3",
+   "build": "builds_on",
+   "purpose": "The operational continuity workbench: business impact analysis, recovery targets, plans and exercises. It feeds the BCMS workspace with the evidence the standard requires.",
+   "users": "BCM coordinators; process owners; COO.",
+   "panels": [
+    "KPI strip: critical processes, plans current, exercises, RTO gaps",
+    "Business impact analysis",
+    "Recovery capability gauges",
+    "Exercise calendar",
+    "Plan status"
+   ],
+   "graphs": [
+    [
+     "Business impact analysis",
+     "Table",
+     "RTO and RPO against achieved with status"
+    ],
+    [
+     "Recovery capability",
+     "Gauges",
+     "Share meeting RTO and RPO"
+    ],
+    [
+     "Exercise calendar",
+     "Gantt",
+     "Exercises by month"
+    ],
+    [
+     "Plan status",
+     "Donut",
+     "Current versus due for review"
+    ]
+   ],
+   "rules": [
+    "A plan must be reviewed within 12 months",
+    "Dependencies on systems and vendors link to Cyber and IT Risk and Third-Party Risk"
+   ],
+   "ai": [
+    [
+     "Suggests dependency links and impact ratings from records",
+     "Coordinator maps dependencies"
+    ]
+   ],
+   "reqs": [
+    [
+     "BIA with RTO, RPO and minimum service level",
+     "M",
+     "Planned"
+    ],
+    [
+     "Plans with owners and review dates",
+     "S",
+     "Planned"
+    ],
+    [
+     "Exercise calendar and results",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "ISO 22301:2019; GRC Policy section 5."
+  },
+  {
+   "key": "third_party_risk",
+   "name": "Third-Party Risk",
+   "suite": "RESILIENCE",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "Manages vendors and partners that EcoCash depends on: tiering, assessment, concentration and exit planning.",
+   "users": "Procurement; vendor owners; Risk Office; CTO.",
+   "panels": [
+    "KPI strip: vendors, assessments current, contracts ending, vendor incidents",
+    "Vendor register with tier, risk, assessment score, contract end",
+    "Concentration by service",
+    "Criticality against risk matrix",
+    "Exit and fourth-party watch"
+   ],
+   "graphs": [
+    [
+     "Vendor register",
+     "Table with score bars",
+     "Vendor, service, tier, rating, assessment score, contract end"
+    ],
+    [
+     "Concentration",
+     "Horizontal bars",
+     "Vendors per service category"
+    ],
+    [
+     "Criticality versus risk",
+     "Matrix with counts",
+     "Vendors by criticality and risk rating"
+    ],
+    [
+     "Assessment currency",
+     "KPI tile with sparkline",
+     "Share of vendors with a current assessment"
+    ]
+   ],
+   "rules": [
+    "Tier 1 vendors need a tested exit plan",
+    "Contracts nearing end raise reminders"
+   ],
+   "ai": [
+    [
+     "Summarises vendor assurance reports and flags gaps",
+     "Reviewer reads reports"
+    ]
+   ],
+   "reqs": [
+    [
+     "Vendor register with tiering",
+     "S",
+     "Planned"
+    ],
+    [
+     "Assessment questionnaires and scoring",
+     "S",
+     "Planned"
+    ],
+    [
+     "Concentration and exit-plan view",
+     "C",
+     "Planned"
+    ]
+   ],
+   "links": "ISO 27001 supplier relationships; ISO 22301 supplier continuity; peer practice."
+  },
+  {
+   "key": "cyber_it_risk",
+   "name": "Cyber & IT Risk",
+   "suite": "RESILIENCE",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "The technical view of cyber and IT risk, drawing on security tooling to show vulnerabilities, patching, access and Annex A coverage next to the ISMS risks.",
+   "users": "CISO and security team; CTO; Risk Office.",
+   "panels": [
+    "KPI strip: critical vulnerabilities, patch SLA, MFA coverage, mean time to detect",
+    "Vulnerabilities by severity trend",
+    "ISO 27001 Annex A coverage by theme",
+    "Top cyber risks"
+   ],
+   "graphs": [
+    [
+     "Vulnerabilities by severity",
+     "Line",
+     "Open critical and high vulnerabilities per week"
+    ],
+    [
+     "Annex A coverage",
+     "Horizontal bars",
+     "Percentage implemented per theme"
+    ],
+    [
+     "Top cyber risks",
+     "Table",
+     "Risk, owner, residual rating, trend"
+    ],
+    [
+     "Patch SLA",
+     "KPI tile with sparkline",
+     "Share patched within SLA"
+    ]
+   ],
+   "rules": [
+    "Feeds update automatically; a critical vulnerability open beyond SLA raises an alert"
+   ],
+   "ai": [
+    [
+     "Prioritises vulnerabilities by exposure and links them to risks",
+     "Sorted by severity and age"
+    ]
+   ],
+   "reqs": [
+    [
+     "Security tool feeds for vulnerabilities and access",
+     "S",
+     "Planned"
+    ],
+    [
+     "Annex A coverage view",
+     "S",
+     "Planned"
+    ],
+    [
+     "Link to ISMS risks",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "ISO 27001 Annex A technological controls; SIEM and vulnerability scanner feeds."
+  },
+  {
+   "key": "crisis_room",
+   "name": "Crisis Room",
+   "suite": "RESILIENCE",
+   "phase": "P3",
+   "build": "new",
+   "purpose": "Runs a crisis from one screen: declare, assemble the team, follow playbooks, track decisions and timers, and learn afterwards.",
+   "users": "Crisis team; MD; communications; BCM lead.",
+   "panels": [
+    "Status and declare button",
+    "Crisis team and contacts with availability",
+    "Playbooks with triggers and last test",
+    "During-crisis tools"
+   ],
+   "graphs": [
+    [
+     "Status board",
+     "Status panel",
+     "Current state and timers"
+    ],
+    [
+     "Contact availability",
+     "Table with chips",
+     "Role, primary, deputy, reachable"
+    ],
+    [
+     "Playbook readiness",
+     "Table",
+     "Trigger, last tested, owner"
+    ]
+   ],
+   "rules": [
+    "Decisions and the timeline are recorded for the after-action review",
+    "Drills use the same screens"
+   ],
+   "ai": [
+    [
+     "Drafts holding statements and summarises the log for hand-over",
+     "Communications team drafts from templates"
+    ]
+   ],
+   "reqs": [
+    [
+     "Declare, team, playbooks and log",
+     "S",
+     "Planned"
+    ],
+    [
+     "Templates for staff and regulator messages",
+     "S",
+     "Planned"
+    ],
+    [
+     "Mobile access for the crisis team",
+     "C",
+     "Planned"
+    ]
+   ],
+   "links": "ISO 22301:2019 clause 8.4; GRC Policy section 5."
+  },
+  {
+   "key": "sentinel_copilot",
+   "name": "Sentinel Copilot",
+   "suite": "INTELLIGENCE",
+   "phase": "P4",
+   "build": "builds_on",
+   "purpose": "An assistant that answers questions in plain language from the live register and approved documents, with citations, and drafts work for approval. It is optional: every function it helps with is also available by filters and forms.",
+   "users": "All users, within their own permissions.",
+   "panels": [
+    "Conversation with citations",
+    "Sources used",
+    "Suggested prompts",
+    "Draft actions awaiting approval"
+   ],
+   "graphs": [
+    [
+     "Usage",
+     "KPI tiles",
+     "Questions, acceptance and time saved (AI Governance)"
+    ]
+   ],
+   "rules": [
+    "Answers cite records and respect the user's permissions",
+    "The assistant never changes a record or sends a message without approval",
+    "Prompts and answers are logged"
+   ],
+   "ai": [
+    [
+     "This module is the AI capability itself",
+     "Hidden when AI is off; users use search, filters and reports"
+    ]
+   ],
+   "reqs": [
+    [
+     "Retrieval-based answers with citations and role-aware access",
+     "S",
+     "Partial"
+    ],
+    [
+     "Drafts routed for approval",
+     "S",
+     "Planned"
+    ],
+    [
+     "Conversation log",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "NIST AI RMF; ISO/IEC 42001."
+  },
+  {
+   "key": "document_intelligence",
+   "name": "Document Intelligence",
+   "suite": "INTELLIGENCE",
+   "phase": "P4",
+   "build": "builds_on",
+   "purpose": "Turns documents such as audit reports, policies and incident reports into draft risks and controls for a named reviewer to accept, edit or reject.",
+   "users": "Risk Office; owners; auditors.",
+   "panels": [
+    "Document viewer with highlighted passages",
+    "Suggested risks with match, confidence, suggested rating and decision buttons",
+    "Batch upload"
+   ],
+   "graphs": [
+    [
+     "Suggestion list",
+     "List with confidence",
+     "Draft risk, match to register, confidence, suggested rating"
+    ],
+    [
+     "Acceptance rate",
+     "KPI tile",
+     "Accepted divided by suggested"
+    ]
+   ],
+   "rules": [
+    "Nothing is saved until a named reviewer accepts",
+    "Uploaded text is treated as data, never as instructions",
+    "Every decision is logged for model validation"
+   ],
+   "ai": [
+    [
+     "Extracts, classifies and matches to the register and library",
+     "Users enter risks manually or import them from workbooks"
+    ]
+   ],
+   "reqs": [
+    [
+     "Extraction with highlights, confidence and decision buttons",
+     "S",
+     "Partial"
+    ],
+    [
+     "Whole-word matching with evidence-based ranking",
+     "M",
+     "Planned"
+    ],
+    [
+     "Reviewer decision log",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "NIST AI 600-1 prompt injection; GRC Policy 2.1."
+  },
+  {
+   "key": "predictive_analytics",
+   "name": "Predictive Analytics",
+   "suite": "INTELLIGENCE",
+   "phase": "P4",
+   "build": "new",
+   "purpose": "Forecasts KRI breaches and detects anomalies, giving days of warning. Models are validated and listed in the model register.",
+   "users": "Risk Office; Head of Compliance and ML/CTF; owners.",
+   "panels": [
+    "KPI strip: active models, forecast accuracy, average early warning, false alarms",
+    "Forecast with confidence band",
+    "Predicted breaches",
+    "Model register"
+   ],
+   "graphs": [
+    [
+     "KRI forecast",
+     "Line with confidence band",
+     "Actual, forecast, upper and lower bounds"
+    ],
+    [
+     "Predicted breaches",
+     "Table",
+     "KRI, expected breach, confidence"
+    ],
+    [
+     "Model register",
+     "Table",
+     "Model, use, accuracy, validated, status"
+    ]
+   ],
+   "rules": [
+    "Forecasts are advisory; a person confirms before escalation",
+    "Models are revalidated on a schedule"
+   ],
+   "ai": [
+    [
+     "This module is the AI capability itself",
+     "Fixed thresholds and alerts in KRI Monitor remain"
+    ]
+   ],
+   "reqs": [
+    [
+     "KRI forecasts with confidence",
+     "C",
+     "Planned"
+    ],
+    [
+     "Anomaly detection on transactions and KRIs",
+     "C",
+     "Planned"
+    ],
+    [
+     "Model register with validation",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "NIST AI RMF Measure; ISO/IEC 42001."
+  },
+  {
+   "key": "ai_governance",
+   "name": "AI Governance",
+   "suite": "INTELLIGENCE",
+   "phase": "P1",
+   "build": "new",
+   "purpose": "Controls how AI is used inside Sentinel. It is where AI is switched on or off, by mode and by capability, and where use is monitored. It makes AI an option rather than a dependency.",
+   "users": "AI owner; Head of Risk; CTO; auditors.",
+   "panels": [
+    "AI operating mode: Off, Assist, Advanced",
+    "AI capabilities by module with on or off state and the manual fallback",
+    "Guardrails: hosting, external services, redaction, logging, approvals, kill switch",
+    "Usage and quality",
+    "AI inventory and Annex-style checklist"
+   ],
+   "graphs": [
+    [
+     "Operating mode",
+     "Selector cards",
+     "Current mode and what it allows"
+    ],
+    [
+     "Capability switches",
+     "Table with state chips",
+     "Module, capability, on or off, manual fallback"
+    ],
+    [
+     "Usage and quality",
+     "KPI tiles",
+     "Suggestions, accepted, edited, rejected, time saved"
+    ],
+    [
+     "Accuracy trend",
+     "Line",
+     "Accuracy of classifier and suggestions by month"
+    ],
+    [
+     "Control checklist",
+     "Status list",
+     "Govern, map, measure, manage status"
+    ]
+   ],
+   "rules": [
+    "Mode changes need AI owner approval and are logged",
+    "Turning a capability off never removes a function",
+    "A kill switch turns all AI off at once"
+   ],
+   "ai": [
+    [
+     "Summarises quality and drift for the monthly report",
+     "Owner reads the monitors"
+    ]
+   ],
+   "reqs": [
+    [
+     "Three AI modes and per-capability switches",
+     "M",
+     "Planned"
+    ],
+    [
+     "Prompt and output log with reviewer decisions",
+     "M",
+     "Planned"
+    ],
+    [
+     "Kill switch and approved-hosting enforcement",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "NIST AI RMF; ISO/IEC 42001; Cyber and Data Protection Act."
+  },
+  {
+   "key": "workflow_designer",
+   "name": "Workflow Designer",
+   "suite": "PLATFORM",
+   "phase": "P1",
+   "build": "new",
+   "purpose": "Lets the Risk Office configure lifecycles, approvals and escalation rules without code, with version history.",
+   "users": "Risk Office and administrators.",
+   "panels": [
+    "Workflow canvas with states and transitions",
+    "State properties: who can move, required fields, rules, SLA",
+    "Workflow list with version"
+   ],
+   "graphs": [
+    [
+     "State diagram",
+     "Flow diagram",
+     "States, transitions and routing rules"
+    ],
+    [
+     "Workflow list",
+     "Table",
+     "Workflow, used by, states, version"
+    ]
+   ],
+   "rules": [
+    "Changes are versioned and approved before publishing",
+    "A record keeps the version it started on"
+   ],
+   "ai": [
+    [
+     "Suggests rules from past approvals",
+     "Designer builds rules manually"
+    ]
+   ],
+   "reqs": [
+    [
+     "Configurable states, rules and SLAs with versions",
+     "M",
+     "Planned"
+    ],
+    [
+     "Routing to the Board for High risks",
+     "M",
+     "Planned"
+    ],
+    [
+     "Escalation by rule",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "Policy as configuration."
+  },
+  {
+   "key": "integration_hub",
+   "name": "Integration Hub",
+   "suite": "PLATFORM",
+   "phase": "P2",
+   "build": "builds_on",
+   "purpose": "Connects Sentinel to the systems that hold the facts: wallet platform, fraud and AML, SIEM, ITSM, directory, HR, finance and Power BI.",
+   "users": "CTO and integration team; Risk Office.",
+   "panels": [
+    "Connector cards with status and last sync",
+    "Data flow in the last 24 hours",
+    "API and events: endpoints, webhooks, keys"
+   ],
+   "graphs": [
+    [
+     "Connector health",
+     "Status cards",
+     "Connected, delayed or failed with last sync time"
+    ],
+    [
+     "Data flow",
+     "Columns",
+     "Events received per connector in 24 hours"
+    ]
+   ],
+   "rules": [
+    "Failed or delayed feeds raise alerts",
+    "Keys rotate on a schedule"
+   ],
+   "ai": [
+    [
+     "Detects feed anomalies and suggests fixes",
+     "Operators monitor status cards"
+    ]
+   ],
+   "reqs": [
+    [
+     "Documented API with authentication",
+     "M",
+     "Built"
+    ],
+    [
+     "Connectors for directory, wallet, fraud, SIEM, ITSM",
+     "S",
+     "Planned"
+    ],
+    [
+     "Connector health and alerts",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "Open API; section 10 of this document."
+  },
+  {
+   "key": "data_reports",
+   "name": "Data & Reports",
+   "suite": "PLATFORM",
+   "phase": "P2",
+   "build": "builds_on",
+   "purpose": "The report, graph and register library. Every report, graph and register can be built, scheduled, downloaded, deleted and restored here, with the same rules in every module.",
+   "users": "Risk Office; executives; BI team; every user for their own saved items.",
+   "panels": [
+    "Report cards with frequency and format",
+    "Schedules with next run and recipients",
+    "Governed datasets for Power BI",
+    "Saved graphs and registers with owner and share settings",
+    "Deleted items tab (restorable)"
+   ],
+   "graphs": [
+    [
+     "Report catalogue",
+     "Cards",
+     "Report, audience, frequency, format"
+    ],
+    [
+     "Schedules",
+     "Table",
+     "Next run, recipients, status"
+    ]
+   ],
+   "rules": [
+    "Download: tables to Excel or CSV, graphs to PNG, SVG or PDF with their data, reports to PDF, Word, PowerPoint or Excel, registers in Appendix I layout; every download is logged and watermarked with user and time",
+    "Delete moves a report or graph to the Recycle Bin for 90 days; restore returns it with its schedule and history",
+    "Large exports run in the background and the link expires after 24 hours",
+    "Every figure traces to a record; datasets are read-only with row-level rules"
+   ],
+   "ai": [
+    [
+     "Drafts report commentary and suggests which graphs to include",
+     "Author writes commentary and picks graphs"
+    ]
+   ],
+   "reqs": [
+    [
+     "Report, graph and register library with schedules",
+     "M",
+     "Planned"
+    ],
+    [
+     "Download in Excel, CSV, PDF, Word, PowerPoint, PNG and SVG with logging",
+     "M",
+     "Partial"
+    ],
+    [
+     "Delete to Recycle Bin and restore for reports and graphs",
+     "M",
+     "Planned"
+    ]
+   ],
+   "links": "GRC Policy 2.5; Power BI."
+  },
+  {
+   "key": "access_management",
+   "name": "Access Management",
+   "suite": "PLATFORM",
+   "phase": "P0",
+   "build": "builds_on",
+   "purpose": "Controls who can use Sentinel and what each person can see and do. The System Administrator adds, edits, restricts, deactivates, deletes and restores users, assigns roles and sets permissions; every user manages their own profile. Sign-in security rules (password every 90 days, lock after 3 failed attempts) are set and monitored here.",
+   "users": "System Administrator (full control); Head of Risk (approves sensitive role changes); every user (own profile and password).",
+   "panels": [
+    "User list with status, role, last sign-in, password age and MFA, with filters and bulk actions",
+    "Add user dialog: details, roles, data scope, access expiry, temporary password or invitation",
+    "Roles and permission matrix by module and action, with separation-of-duties rules",
+    "My Profile: details, security, active sessions, notifications, delegation",
+    "Sign-in and session policy with sign-in chart and locked or expired accounts",
+    "Quarterly access review and deleted users (restorable)"
+   ],
+   "graphs": [
+    [
+     "User status tiles",
+     "KPI tiles",
+     "Users, locked, invited, password expired, MFA, access expiring"
+    ],
+    [
+     "Permission matrix",
+     "Matrix of ticks",
+     "Allowed actions per module for a role"
+    ],
+    [
+     "Sign-ins, last 14 days",
+     "Stacked columns",
+     "Successful and failed sign-ins per day"
+    ],
+    [
+     "Access review progress",
+     "Progress bar",
+     "Users reviewed divided by users in scope"
+    ],
+    [
+     "Locked and expired accounts",
+     "Table with actions",
+     "User, reason, since, unlock or reset"
+    ]
+   ],
+   "rules": [
+    "Add: administrator creates the user; the user receives an invitation with a temporary password valid 48 hours and must change it at first sign-in",
+    "Restrict: each role has View, Create, Edit, Delete, Approve and Export per module plus a data scope (own function, business unit, all); permissions can be time-bound",
+    "Deactivate keeps history; delete moves the user to the Recycle Bin for 90 days and permanent removal needs a second approver; restore is one click",
+    "Password changes every 90 days (warnings at 14, 7 and 1 day); 3 consecutive failed attempts lock the account; unlock by administrator or reset link by e-mail",
+    "The administrator cannot view risk data unless also granted a business role; role changes for Head of Risk and Administrator need MD approval; break-glass access is time-boxed and logged"
+   ],
+   "ai": [
+    [
+     "Suggests role scopes from job title and peers; flags unusual access for review",
+     "Administrator assigns roles from the role list"
+    ]
+   ],
+   "reqs": [
+    [
+     "Add, edit, deactivate, delete, restore and bulk-import users",
+     "M",
+     "Partial"
+    ],
+    [
+     "Role and permission matrix by module and action with data scope and separation of duties",
+     "M",
+     "Partial"
+    ],
+    [
+     "90-day password expiry, 3-attempt lockout, temporary password and reset options",
+     "M",
+     "Planned"
+    ],
+    [
+     "My Profile with password, MFA, sessions, notifications and delegation",
+     "M",
+     "Planned"
+    ],
+    [
+     "Quarterly access review",
+     "S",
+     "Planned"
+    ]
+   ],
+   "links": "ISO 27001 Annex A (access control, authentication); NIST-aligned password practice; Cyber and Data Protection Act; GRC Policy 1.5."
+  },
+  {
+   "key": "administration",
+   "name": "Administration",
+   "suite": "PLATFORM",
+   "phase": "P0",
+   "build": "builds_on",
+   "purpose": "System controls: configuration of the ranked matrix and appetite, the Recycle Bin and restore, backup and system restore, the export centre, and the tamper-evident audit trail.",
+   "users": "System Administrator (operate); Head of Risk (matrix and appetite); CTO (backup and restore approval); auditors (audit trail, read-only).",
+   "panels": [
+    "Matrix configuration as a versioned lookup table, configuration items and recent changes",
+    "Recycle Bin: every deleted item with reason, who, when, days left, restore or delete forever",
+    "Backup schedule, last result, restore points and restore requests",
+    "Export centre: new export, export history with expiring links",
+    "Audit trail with hash chain and filters"
+   ],
+   "graphs": [
+    [
+     "Matrix editor",
+     "Ranked matrix",
+     "25 cells with rank and level, version and effective date"
+    ],
+    [
+     "Recycle Bin tiles",
+     "KPI tiles",
+     "Items in bin, purge in 7 days, retention, restored this month"
+    ],
+    [
+     "Backup health tiles",
+     "KPI tiles",
+     "Last backup, recovery point, restore test, storage used"
+    ],
+    [
+     "Export history",
+     "Table",
+     "Who, what, format, rows, when, link expiry, status"
+    ],
+    [
+     "Audit trail",
+     "Table with hash column",
+     "Time, user, event, module, source address, hash"
+    ]
+   ],
+   "rules": [
+    "Delete moves an item to the Recycle Bin with a reason; restore returns it with its links and history; items past retention (90 days) are purged automatically; delete forever needs a reason and a second approver",
+    "Backups: daily full, hourly incremental, monthly archive, all encrypted; a restore needs two approvers and runs into a sandbox first; restore tests every quarter",
+    "Exports: every download is logged and watermarked; personal-data exports need DPO approval; the full data package needs MD approval",
+    "Audit entries are chained by hash and retained at least 7 years (to confirm)"
+   ],
+   "ai": [
+    [
+     "Summarises the audit trail and flags unusual patterns such as bulk exports",
+     "Auditors filter and read the log"
+    ]
+   ],
+   "reqs": [
+    [
+     "Versioned matrix and appetite configuration with approvals",
+     "M",
+     "Planned"
+    ],
+    [
+     "Recycle Bin with restore, retention and second-approver permanent delete",
+     "M",
+     "Partial"
+    ],
+    [
+     "Automated encrypted backups, restore points and two-approver system restore",
+     "M",
+     "Planned"
+    ],
+    [
+     "Export centre with logging, watermark and expiring links",
+     "M",
+     "Planned"
+    ],
+    [
+     "Tamper-evident audit trail",
+     "M",
+     "Built"
+    ]
+   ],
+   "links": "ISO 27001 clauses 8.13 (backup), 8.15 (logging); GRC Policy; Cyber and Data Protection Act."
+  }
+ ]
+}

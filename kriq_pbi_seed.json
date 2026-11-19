@@ -1,0 +1,404 @@
+{
+ "name": "Power BI report: residual ratings and extra KRIs",
+ "kind": "pbi",
+ "risks": [
+  {
+   "no": 1,
+   "name": "Business Performance Risk",
+   "residual": {
+    "FY26Q4": 13.0,
+    "FY27Q1": 5.0,
+    "FY27Q2": 8.0
+   }
+  },
+  {
+   "no": 2,
+   "name": "Competition Risk",
+   "residual": {
+    "FY26Q4": 15.0,
+    "FY27Q1": 13.0,
+    "FY27Q2": 10.0
+   }
+  },
+  {
+   "no": 3,
+   "name": "Escalating Operating Expenses Risk",
+   "residual": {
+    "FY26Q4": 15.0,
+    "FY27Q1": 15.0,
+    "FY27Q2": 15.0
+   }
+  },
+  {
+   "no": 4,
+   "name": "Economic Risk",
+   "residual": {
+    "FY26Q4": 15.0,
+    "FY27Q1": 15.0,
+    "FY27Q2": 13.0
+   }
+  },
+  {
+   "no": 5,
+   "name": "Regulatory Risk",
+   "residual": {
+    "FY26Q4": 13.0,
+    "FY27Q1": 13.0,
+    "FY27Q2": 13.0
+   }
+  },
+  {
+   "no": 6,
+   "name": "Business Model Risk",
+   "residual": {
+    "FY26Q4": 8.0,
+    "FY27Q1": 10.0,
+    "FY27Q2": 15.0
+   }
+  },
+  {
+   "no": 7,
+   "name": "Cyber Security & Fraud Risk",
+   "residual": {
+    "FY26Q4": 18.0,
+    "FY27Q1": 13.0,
+    "FY27Q2": 18.0
+   }
+  },
+  {
+   "no": 8,
+   "name": "BCM Risk",
+   "residual": {
+    "FY26Q4": 13.0,
+    "FY27Q1": 10.0,
+    "FY27Q2": 13.0
+   }
+  },
+  {
+   "no": 9,
+   "name": "Money Laundering Risk",
+   "residual": {
+    "FY26Q4": 12.0,
+    "FY27Q1": 10.0,
+    "FY27Q2": 10.0
+   }
+  },
+  {
+   "no": 10,
+   "name": "Staff Attrition & Disengagement Risk",
+   "residual": {
+    "FY26Q4": 8.0,
+    "FY27Q1": 8.0,
+    "FY27Q2": 8.0
+   }
+  },
+  {
+   "no": 11,
+   "name": "Conduct Risk",
+   "residual": {
+    "FY26Q4": 13.0,
+    "FY27Q1": 15.0,
+    "FY27Q2": 10.0
+   }
+  },
+  {
+   "no": 12,
+   "name": "Credit Risk",
+   "residual": {
+    "FY26Q4": 15.0,
+    "FY27Q1": 18.0,
+    "FY27Q2": 15.0
+   }
+  },
+  {
+   "no": 13,
+   "name": "Digital Transformation & Technology Risk",
+   "residual": {
+    "FY26Q4": 18.0,
+    "FY27Q1": 15.0,
+    "FY27Q2": 15.0
+   }
+  },
+  {
+   "no": 14,
+   "name": "Over-reliance on Third Parties",
+   "residual": {
+    "FY26Q4": 15.0,
+    "FY27Q1": 15.0
+   }
+  },
+  {
+   "no": 101,
+   "name": "Protection of Trust Funds: Credit Risk (Board of Trustees)",
+   "residual": {
+    "FY26Q4": 13.0,
+    "FY27Q1": 15.0,
+    "FY27Q2": 15.0
+   }
+  },
+  {
+   "no": 102,
+   "name": "Insolvency of Operators: EcoCash (Board of Trustees)",
+   "residual": {
+    "FY26Q4": 10.0,
+    "FY27Q1": 10.0,
+    "FY27Q2": 10.0
+   }
+  },
+  {
+   "no": 103,
+   "name": "Investment Risk (Board of Trustees)",
+   "residual": {
+    "FY26Q4": 10.0,
+    "FY27Q1": 10.0,
+    "FY27Q2": 10.0
+   }
+  }
+ ],
+ "kris": [
+  {
+   "risk_no": 1,
+   "name": "Return on Assets",
+   "target": ">5%",
+   "values": {
+    "FY26Q4": {
+     "raw": "7%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q1": {
+     "raw": "30%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "6%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 1,
+   "name": "Return on Equity",
+   "target": ">20%",
+   "values": {
+    "FY26Q4": {
+     "raw": "34%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q1": {
+     "raw": "33%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "27%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 3,
+   "name": "Monetary Assets as a percentage of Total Assets",
+   "target": "<26%",
+   "values": {
+    "FY27Q1": {
+     "raw": "74%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "91%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 2,
+   "name": "DMT Partners",
+   "target": ">20000",
+   "values": {
+    "FY27Q2": {
+     "raw": "16112",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 14,
+   "name": "Ecocash Franchise",
+   "target": "",
+   "values": {
+    "FY27Q2": {
+     "raw": "18.9K",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 7,
+   "name": "Fraudulent SIM swap cases",
+   "target": "0",
+   "values": {
+    "FY27Q1": {
+     "raw": "17",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "18",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 7,
+   "name": "SIM swap losses (USD thousand)",
+   "target": "0",
+   "values": {
+    "FY27Q1": {
+     "raw": "USD3k",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "USD6.9k",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 7,
+   "name": "OTP fraud value (USD thousand)",
+   "target": "0",
+   "values": {
+    "FY27Q2": {
+     "raw": "USD91.7k",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 12,
+   "name": "Intercompany share of creditors",
+   "target": "<50%",
+   "values": {
+    "FY26Q4": {
+     "raw": "95.1%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q1": {
+     "raw": "73.8%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "65.2%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 13,
+   "name": "Automation score",
+   "target": ">90%",
+   "values": {
+    "FY26Q4": {
+     "raw": "58%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 13,
+   "name": "Recovery rate - ZWG exposures",
+   "target": "",
+   "values": {
+    "FY27Q1": {
+     "raw": "48%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "48%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 13,
+   "name": "Recovery rate - USD exposures",
+   "target": "",
+   "values": {
+    "FY27Q1": {
+     "raw": "33%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "33%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 101,
+   "name": "First Capital",
+   "target": "<16%",
+   "values": {
+    "FY26Q4": {
+     "raw": "6%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 102,
+   "name": "Monetary assets (% of total assets) - BOT view",
+   "target": "<26%",
+   "values": {
+    "FY26Q4": {
+     "raw": "72%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q1": {
+     "raw": "74%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "91%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 102,
+   "name": "Staff cost (% of revenue) - BOT view",
+   "target": "<8%",
+   "values": {
+    "FY26Q4": {
+     "raw": "6%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q1": {
+     "raw": "5.6%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "5.5%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  },
+  {
+   "risk_no": 102,
+   "name": "Revenue budget variance - BOT view",
+   "target": ">5%",
+   "values": {
+    "FY26Q4": {
+     "raw": "36%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q1": {
+     "raw": "9%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    },
+    "FY27Q2": {
+     "raw": "14%",
+     "src": "Power BI report EcoCash_Risk (read from the screenshots)"
+    }
+   }
+  }
+ ]
+}
