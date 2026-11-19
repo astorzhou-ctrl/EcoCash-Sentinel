@@ -1,0 +1,502 @@
+{
+"as_of": "2026-11-17",
+"name": "Update pack 17 Nov 2026",
+"kpis": [
+{
+"code": "CPI_ZWG",
+"name": "Consumer price index (ZWG, all items)",
+"grp": "Inflation and prices",
+"unit": "index",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"better": "none",
+"decimals": 2,
+"readings": [
+[
+"2025-05-31",
+187.417322
+],
+[
+"2025-06-30",
+187.939911
+],
+[
+"2025-07-31",
+190.888447
+],
+[
+"2025-08-31",
+191.653468
+],
+[
+"2025-09-30",
+191.176949
+],
+[
+"2025-10-31",
+190.495621
+],
+[
+"2025-11-30",
+190.879751
+],
+[
+"2025-12-31",
+191.311008
+],
+[
+"2026-01-31",
+191.320978
+],
+[
+"2026-02-28",
+191.586932
+],
+[
+"2026-03-31",
+192.582798
+],
+[
+"2026-04-30",
+194.676377
+],
+[
+"2026-05-31",
+195.614867
+],
+[
+"2026-06-30",
+196.818328
+],
+[
+"2026-07-31",
+196.99966
+],
+[
+"2026-08-31",
+197.188332
+],
+[
+"2026-09-30",
+198.252954
+],
+[
+"2026-10-31",
+198.631142
+]
+],
+"note": "ZIMSTAT ZWG CPI, October 2026 release (file supplied)"
+},
+{
+"code": "INF_ZWG_Y",
+"name": "Annual inflation, ZWG",
+"grp": "Inflation and prices",
+"unit": "%",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"better": "down",
+"decimals": 2,
+"readings": [
+[
+"2026-01-31",
+4.11428
+],
+[
+"2026-02-28",
+3.783007
+],
+[
+"2026-03-31",
+4.380703
+],
+[
+"2026-04-30",
+4.843664
+],
+[
+"2026-05-31",
+4.373952
+],
+[
+"2026-06-30",
+4.724072
+],
+[
+"2026-07-31",
+3.201458
+],
+[
+"2026-08-31",
+2.887954
+],
+[
+"2026-09-30",
+3.701286
+],
+[
+"2026-10-31",
+4.270713
+]
+],
+"note": "ZIMSTAT ZWG CPI, October 2026 release (file supplied)"
+},
+{
+"code": "INF_ZWG_FOOD",
+"name": "Monthly inflation, ZWG (food)",
+"grp": "Inflation and prices",
+"unit": "%",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"better": "down",
+"decimals": 2,
+"readings": [
+[
+"2025-05-31",
+1.6207
+],
+[
+"2025-06-30",
+-0.2057
+],
+[
+"2025-07-31",
+0.1791
+],
+[
+"2025-08-31",
+-0.0709
+],
+[
+"2025-09-30",
+0.2114
+],
+[
+"2025-10-31",
+0.7133
+],
+[
+"2025-11-30",
+0.6548
+],
+[
+"2025-12-31",
+0.573
+],
+[
+"2026-01-31",
+0.1106
+],
+[
+"2026-02-28",
+-0.1277
+],
+[
+"2026-03-31",
+0.2775
+],
+[
+"2026-04-30",
+1.4756
+],
+[
+"2026-05-31",
+0.7559
+],
+[
+"2026-06-30",
+0.5593
+],
+[
+"2026-07-31",
+0.1574
+],
+[
+"2026-08-31",
+-0.0112
+],
+[
+"2026-09-30",
+0.3442
+],
+[
+"2026-10-31",
+0.0081
+]
+],
+"note": "Worked out from the ZWG food index in the October 2026 CPI file"
+},
+{
+"code": "INF_ZWG_NONFOOD",
+"name": "Monthly inflation, ZWG (non-food)",
+"grp": "Inflation and prices",
+"unit": "%",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"better": "down",
+"decimals": 2,
+"readings": [
+[
+"2025-05-31",
+0.5775
+],
+[
+"2025-06-30",
+0.5333
+],
+[
+"2025-07-31",
+2.2934
+],
+[
+"2025-08-31",
+0.6415
+],
+[
+"2025-09-30",
+-0.4818
+],
+[
+"2025-10-31",
+-0.9024
+],
+[
+"2025-11-30",
+-0.0334
+],
+[
+"2025-12-31",
+0.0446
+],
+[
+"2026-01-31",
+-0.0501
+],
+[
+"2026-02-28",
+0.2793
+],
+[
+"2026-03-31",
+0.6467
+],
+[
+"2026-04-30",
+0.8844
+],
+[
+"2026-05-31",
+0.3383
+],
+[
+"2026-06-30",
+0.6447
+],
+[
+"2026-07-31",
+0.0577
+],
+[
+"2026-08-31",
+0.1521
+],
+[
+"2026-09-30",
+0.6429
+],
+[
+"2026-10-31",
+0.2866
+]
+],
+"note": "Worked out from the ZWG non-food index in the October 2026 CPI file"
+},
+{
+"code": "INF_ZWG_M",
+"readings": [
+[
+"2025-05-31",
+0.934274
+],
+[
+"2025-06-30",
+0.278837
+],
+[
+"2025-07-31",
+1.568872
+],
+[
+"2025-08-31",
+0.400769
+],
+[
+"2025-09-30",
+-0.248636
+],
+[
+"2025-10-31",
+-0.356386
+],
+[
+"2025-11-30",
+0.201648
+],
+[
+"2025-12-31",
+0.225931
+],
+[
+"2026-01-31",
+0.005211
+],
+[
+"2026-02-28",
+0.139009
+],
+[
+"2026-03-31",
+0.519798
+],
+[
+"2026-04-30",
+1.087106
+],
+[
+"2026-05-31",
+0.482077
+],
+[
+"2026-06-30",
+0.61522
+],
+[
+"2026-07-31",
+0.092132
+],
+[
+"2026-08-31",
+0.095772
+],
+[
+"2026-09-30",
+0.539901
+],
+[
+"2026-10-31",
+0.19076
+]
+],
+"note": "ZIMSTAT ZWG CPI, October 2026 release (file supplied)"
+},
+{
+"code": "FX_INTERBANK",
+"readings": [
+[
+"2026-10-12",
+26.6492
+]
+],
+"note": "RBZ daily exchange rates, 12 October 2026 (mid)"
+},
+{
+"code": "FX_EUR",
+"readings": [
+[
+"2026-10-12",
+29.8525
+]
+],
+"note": "RBZ daily exchange rates, 12 October 2026 (mid)"
+},
+{
+"code": "FXD_GBP",
+"readings": [
+[
+"2026-10-12",
+35.2771
+]
+],
+"note": "RBZ daily exchange rates, 12 October 2026 (mid)"
+},
+{
+"code": "FXD_ZAR",
+"name": "ZiG per ZAR (daily)",
+"grp": "Foreign exchange",
+"unit": "ZWG",
+"freq": "daily",
+"source": "RBZ",
+"better": "none",
+"decimals": 4,
+"readings": [
+[
+"2026-10-12",
+0.6198
+]
+],
+"note": "RBZ daily exchange rates, 12 October 2026 (mid)"
+},
+{
+"code": "FUEL_PETROL",
+"readings": [
+[
+"2026-10-09",
+2.05
+]
+],
+"note": "ZERA fuel prices as of 9 October 2026 (petrol blend E20, US$ per litre)"
+},
+{
+"code": "FUEL_DIESEL",
+"readings": [
+[
+"2026-10-09",
+2.04
+]
+],
+"note": "ZERA fuel prices as of 9 October 2026 (diesel D50, US$ per litre)"
+},
+{
+"code": "FUEL_LPG",
+"name": "LPG pump price",
+"grp": "Fuel prices",
+"unit": "US$/kg",
+"freq": "weekly",
+"source": "ZERA",
+"better": "none",
+"decimals": 2,
+"readings": [
+[
+"2026-10-09",
+1.87
+]
+],
+"note": "ZERA fuel prices as of 9 October 2026 (US$ per kg)"
+}
+],
+"links": {
+"INF_": "https://www.rbz.co.zw/index.php/research/markets/inflation",
+"CPI_": "https://www.rbz.co.zw/index.php/research/markets/inflation",
+"FX": "https://www.rbz.co.zw/index.php/research/markets/exchange-rates",
+"POLICY_RATE": "https://www.rbz.co.zw/index.php/research/markets/interest-rates",
+"LENDING_RATE": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-reports-banking-sector",
+"NPL": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-reports-banking-sector",
+"CAR": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-reports-banking-sector",
+"MERCHANTS": "https://www.rbz.co.zw/index.php/publications-notices/publications/nps-quarterly-report",
+"ATMS": "https://www.rbz.co.zw/index.php/publications-notices/publications/nps-quarterly-report",
+"POS": "https://www.rbz.co.zw/index.php/publications-notices/publications/nps-quarterly-report",
+"CARD_": "https://www.rbz.co.zw/index.php/publications-notices/publications/nps-quarterly-report",
+"MM_": "https://www.rbz.co.zw/index.php/publications-notices/publications/nps-quarterly-report",
+"M1": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-bulletins",
+"M2": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-bulletins",
+"M3": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-bulletins",
+"FCY_": "https://www.rbz.co.zw/index.php/publications-notices",
+"REMIT_": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-bulletins",
+"USD_SETTLE": "https://www.rbz.co.zw/index.php/research/markets/nps-statistics",
+"ZIG_SETTLE": "https://www.rbz.co.zw/index.php/research/markets/nps-statistics",
+"FUELQ_": "https://www.zera.co.zw/perfomance-statistics/",
+"FUEL_": "https://www.zera.co.zw/",
+"POWER_": "https://www.zesaholdings.co.zw/ZPC",
+"ZSE_CAP": "https://www.zse.co.zw/",
+"VFEX_CAP": "https://www.vfex.exchange/"
+}
+}

@@ -1,0 +1,271 @@
+{
+ "source": "KPI_LINKS.xlsx",
+ "sources": [
+  {
+   "name": "RBZ NPSD Quarterly Report: Mobile Money Value; Mobile Money Volumes",
+   "url": "https://www.rbz.co.zw/index.php/publications-notices/publications/nps-quarterly-report",
+   "provider": "RBZ NPSD Quarterly Report",
+   "freq": "Quarterly",
+   "tier": "official",
+   "codes": [
+    "MM_VAL_SHARE",
+    "MM_VOL_SHARE"
+   ],
+   "kris": [
+    "Mobile Money Value",
+    "Mobile Money Volumes"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "ZimStats: Inflation (USD); Inflation (ZiG); Imports and exports by value...",
+   "url": "https://zimstat.co.zw/",
+   "provider": "ZimStats",
+   "freq": "Monthly",
+   "tier": "official",
+   "codes": [
+    "INF_USD_M",
+    "INF_USD_FOOD",
+    "INF_USD_NONFOOD",
+    "INF_ZWG_M",
+    "EXPORTS",
+    "IMPORTS",
+    "GDP",
+    "GDP_PROJ",
+    "EMP_FORMAL",
+    "EMP_INFORMAL",
+    "EMP_HOUSEHOLD",
+    "EMP_AGRICULTURE",
+    "CROP_MAIZE",
+    "CROP_TOBACCO",
+    "CROP_SORGHUM",
+    "CROP_SOYABEANS",
+    "CROP_COTTON"
+   ],
+   "kris": [
+    "Inflation (USD)",
+    "Inflation (ZiG)",
+    "Imports and exports by value",
+    "GDP",
+    "Unemployment Levels",
+    "Agricultural Output"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "RBZ Website: Official Exchange Rate; Alternate Exchange Rate",
+   "url": "https://www.rbz.co.zw/index.php/13-daily-exchange-rates",
+   "provider": "RBZ Website",
+   "freq": "Daily",
+   "tier": "official",
+   "codes": [
+    "FX_INTERBANK",
+    "FXD_USD",
+    "FXD_GBP",
+    "FXD_BWP",
+    "FX_PARALLEL",
+    "FX_PREMIUM"
+   ],
+   "kris": [
+    "Official Exchange Rate",
+    "Alternate Exchange Rate"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "RBZ Website: USD transactions ratio; Money in Circulation (M1,M2 and M3)",
+   "url": "https://www.rbz.co.zw/index.php/publications-notices/publications/monthly-economic-review",
+   "provider": "RBZ Website",
+   "freq": "Monthly",
+   "tier": "official",
+   "codes": [
+    "USD_SETTLE",
+    "M1",
+    "M2",
+    "M3"
+   ],
+   "kris": [
+    "USD transactions ratio",
+    "Money in Circulation (M1,M2 and M3)"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "RBZ Website: Inbound Remmittance Value",
+   "url": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-bulletins",
+   "provider": "RBZ Website",
+   "freq": "Monthly",
+   "tier": "official",
+   "codes": [
+    "REMIT_FY",
+    "REMIT_Q"
+   ],
+   "kris": [
+    "Inbound Remmittance Value"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "ZSE and VFEX: ZSE vs Vicfalls Stock Comparison",
+   "url": "https://www.vfex.exchange/",
+   "provider": "ZSE and VFEX",
+   "freq": "Daily",
+   "tier": "official",
+   "codes": [
+    "ZSE_CAP",
+    "VFEX_CAP"
+   ],
+   "kris": [
+    "ZSE vs Vicfalls Stock Comparison"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "ZSE and VFEX: ZSE vs Vicfalls Stock Comparison",
+   "url": "https://www.zse.co.zw/",
+   "provider": "ZSE and VFEX",
+   "freq": "Daily",
+   "tier": "official",
+   "codes": [
+    "ZSE_CAP",
+    "VFEX_CAP"
+   ],
+   "kris": [
+    "ZSE vs Vicfalls Stock Comparison"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "ZERA: Fuel Price",
+   "url": "https://www.zera.co.zw/",
+   "provider": "ZERA",
+   "freq": "Daily",
+   "tier": "official",
+   "codes": [
+    "FUEL_PETROL",
+    "FUEL_DIESEL"
+   ],
+   "kris": [
+    "Fuel Price"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "RBZ: Consumer Price Index",
+   "url": "https://www.rbz.co.zw/index.php/research/markets/inflation",
+   "provider": "RBZ",
+   "freq": "Monthly",
+   "tier": "official",
+   "codes": [
+    "CPI_USD"
+   ],
+   "kris": [
+    "Consumer Price Index"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "MPS: Bank Capitalisation Compliance",
+   "url": "https://www.rbz.co.zw/documents/bank_sup/BANKING_SECTOR_QUARTERLY_INDUSTRY_REPORT/2025/Banking_Sector_Industry_Report_-_31_December_2025.pdf",
+   "provider": "MPS",
+   "freq": "Quarterly",
+   "tier": "official",
+   "codes": [
+    "CAR"
+   ],
+   "kris": [
+    "Bank Capitalisation Compliance"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "MPS: National Non Perfoming Loans (NPL)",
+   "url": "https://www.rbz.co.zw/index.php/publications-notices/publications/quarterly-reports-banking-sector",
+   "provider": "MPS",
+   "freq": "Quarterly",
+   "tier": "official",
+   "codes": [
+    "NPL"
+   ],
+   "kris": [
+    "National Non Perfoming Loans (NPL)"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "TechZim: POTRAZ Quartely Report",
+   "url": "https://www.techzim.co.zw/zimbabwe-potraz-telecoms-reports/",
+   "provider": "TechZim",
+   "freq": "Quarterly",
+   "tier": "secondary",
+   "codes": [
+    "MM_LINES_ECONET",
+    "MM_LINES_NETONE",
+    "MM_LINES_TELECEL",
+    "MM_SHARE_ECONET",
+    "MM_SHARE_NETONE",
+    "MM_SHARE_TELECEL"
+   ],
+   "kris": [
+    "POTRAZ Quartely Report"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "RBZ Website: Interest Rates",
+   "url": "https://www.rbz.co.zw/index.php/research/markets/interest-rates",
+   "provider": "RBZ Website",
+   "freq": "Quarterly",
+   "tier": "official",
+   "codes": [
+    "POLICY_RATE",
+    "LENDING_RATE"
+   ],
+   "kris": [
+    "Interest Rates"
+   ],
+   "manual_only": false
+  },
+  {
+   "name": "Bloomberg/RBZ: Core Commodities",
+   "url": "https://www.bloomberg.com/markets/commodities/futures/metals",
+   "provider": "Bloomberg/RBZ",
+   "freq": "Daily/Monthly",
+   "tier": "unverified",
+   "codes": [
+    "PLATINUM",
+    "PALLADIUM",
+    "GOLD"
+   ],
+   "kris": [
+    "Core Commodities"
+   ],
+   "manual_only": true
+  },
+  {
+   "name": "Stable Coin Dashboard: Cryptocurrency/Stable Coins (USDC/USDT)",
+   "url": "https://stablecoindashboard.net/",
+   "provider": "Stable Coin Dashboard",
+   "freq": "Daily",
+   "tier": "secondary",
+   "codes": [
+    "PEG_USDC",
+    "PEG_USDT",
+    "PEG_DAI",
+    "PEG_USDP"
+   ],
+   "kris": [
+    "Cryptocurrency/Stable Coins (USDC/USDT)"
+   ],
+   "manual_only": false
+  }
+ ],
+ "manual": [
+  {
+   "kri": "Civil Unrest",
+   "source": "Local News",
+   "note": "No website to visit: update by hand",
+   "codes": []
+  }
+ ]
+}
