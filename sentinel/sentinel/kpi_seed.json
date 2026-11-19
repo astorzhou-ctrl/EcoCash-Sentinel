@@ -1,0 +1,3708 @@
+{
+"as_of": "2026-09-17",
+"source": "EcoCash ERM Weekly KPI Report, September 2026",
+"kpis": [
+{
+"code": "INF_USD_M",
+"name": "Monthly inflation, USD (overall)",
+"grp": "Inflation and prices",
+"unit": "%",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "down",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-05-31",
+-0.12
+],
+[
+"2025-06-30",
+-0.35
+],
+[
+"2025-07-31",
+0.27
+],
+[
+"2025-08-31",
+0.01
+],
+[
+"2025-09-30",
+0.0
+],
+[
+"2025-10-31",
+0.35
+],
+[
+"2025-11-30",
+0.18
+],
+[
+"2025-12-31",
+0.02
+],
+[
+"2026-01-31",
+0.24
+],
+[
+"2026-02-28",
+0.11
+],
+[
+"2026-03-31",
+0.52
+],
+[
+"2026-04-30",
+1.05
+],
+[
+"2026-05-31",
+0.34
+],
+[
+"2026-06-30",
+0.06
+],
+[
+"2026-07-31",
+0.28
+],
+[
+"2026-08-31",
+0.01
+]
+]
+},
+{
+"code": "INF_USD_FOOD",
+"name": "Monthly inflation, USD (food)",
+"grp": "Inflation and prices",
+"unit": "%",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "down",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-05-31",
+-0.9
+],
+[
+"2025-06-30",
+-0.75
+],
+[
+"2025-07-31",
+-0.33
+],
+[
+"2025-08-31",
+-0.02
+],
+[
+"2025-09-30",
+0.09
+],
+[
+"2025-10-31",
+0.16
+],
+[
+"2025-11-30",
+0.18
+],
+[
+"2025-12-31",
+-0.02
+],
+[
+"2026-01-31",
+0.3
+],
+[
+"2026-02-28",
+0.02
+],
+[
+"2026-03-31",
+0.66
+],
+[
+"2026-04-30",
+0.85
+],
+[
+"2026-05-31",
+0.76
+],
+[
+"2026-06-30",
+-0.03
+],
+[
+"2026-07-31",
+0.22
+]
+]
+},
+{
+"code": "INF_USD_NONFOOD",
+"name": "Monthly inflation, USD (non-food)",
+"grp": "Inflation and prices",
+"unit": "%",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "down",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-05-31",
+-0.01
+],
+[
+"2025-06-30",
+0.03
+],
+[
+"2025-07-31",
+0.54
+],
+[
+"2025-08-31",
+0.02
+],
+[
+"2025-09-30",
+0.02
+],
+[
+"2025-10-31",
+0.42
+],
+[
+"2025-11-30",
+0.16
+],
+[
+"2025-12-31",
+0.03
+],
+[
+"2026-01-31",
+0.26
+],
+[
+"2026-02-28",
+0.18
+],
+[
+"2026-03-31",
+0.44
+],
+[
+"2026-04-30",
+1.15
+],
+[
+"2026-05-31",
+0.15
+],
+[
+"2026-06-30",
+0.1
+],
+[
+"2026-07-31",
+0.31
+],
+[
+"2026-08-31",
+0.13
+]
+]
+},
+{
+"code": "INF_ZWG_M",
+"name": "Monthly inflation, ZWG",
+"grp": "Inflation and prices",
+"unit": "%",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "down",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-08-31",
+0.4007685393539191
+],
+[
+"2025-09-30",
+-0.24863571453043676
+],
+[
+"2025-10-31",
+-0.35638632798715264
+],
+[
+"2025-11-30",
+0.20164806925974688
+],
+[
+"2025-12-31",
+0.22593109373816844
+],
+[
+"2026-01-31",
+0.005211189085102319
+],
+[
+"2026-02-28",
+0.13900947579539036
+],
+[
+"2026-03-31",
+0.5197984781833043
+],
+[
+"2026-04-30",
+1.0871058977038643
+],
+[
+"2026-05-31",
+0.48207687654404197
+],
+[
+"2026-06-30",
+0.6152195841266916
+],
+[
+"2026-07-31",
+0.09213189483396889
+],
+[
+"2026-08-31",
+0.09577249377656472
+]
+]
+},
+{
+"code": "CPI_USD",
+"name": "Consumer price index (USD)",
+"grp": "Inflation and prices",
+"unit": "index",
+"freq": "monthly",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "none",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-01-31",
+121.43
+],
+[
+"2025-02-28",
+121.73
+],
+[
+"2025-03-31",
+121.87
+],
+[
+"2025-04-30",
+122.12
+],
+[
+"2025-05-31",
+121.76
+],
+[
+"2025-07-31",
+121.81010167601916
+],
+[
+"2025-08-31",
+126.87
+],
+[
+"2026-01-31",
+122.69
+],
+[
+"2026-02-28",
+122.82
+],
+[
+"2026-03-31",
+123.46
+],
+[
+"2026-04-30",
+124.76
+],
+[
+"2026-05-31",
+125.19
+],
+[
+"2026-07-31",
+125.61459318270205
+],
+[
+"2026-08-31",
+130.9
+]
+]
+},
+{
+"code": "PLATINUM",
+"name": "Platinum price",
+"grp": "Inflation and prices",
+"unit": "US$/oz",
+"freq": "monthly",
+"source": "Market data (weekly KPI report)",
+"source_url": null,
+"better": "none",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-11-30",
+1280.9
+],
+[
+"2025-12-31",
+1465.3
+],
+[
+"2026-01-31",
+1755.5
+],
+[
+"2026-02-28",
+2060.84
+],
+[
+"2026-03-31",
+2146.08
+],
+[
+"2026-04-30",
+2030.5
+],
+[
+"2026-05-31",
+1984.0
+],
+[
+"2026-06-30",
+1770.95
+],
+[
+"2026-07-31",
+1626.4
+],
+[
+"2026-08-31",
+1720.43
+],
+[
+"2026-09-17",
+1823.22
+]
+]
+},
+{
+"code": "PALLADIUM",
+"name": "Palladium price",
+"grp": "Inflation and prices",
+"unit": "US$/oz",
+"freq": "monthly",
+"source": "Market data (weekly KPI report)",
+"source_url": null,
+"better": "none",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-11-30",
+1120.4
+],
+[
+"2025-12-31",
+1200.7
+],
+[
+"2026-01-31",
+1265.4
+],
+[
+"2026-02-28",
+1557.34
+],
+[
+"2026-03-31",
+1736.45
+],
+[
+"2026-04-30",
+1445.84
+],
+[
+"2026-05-31",
+1324.0
+],
+[
+"2026-06-30",
+1344.7
+],
+[
+"2026-07-31",
+1309.12
+],
+[
+"2026-08-31",
+1331.25
+],
+[
+"2026-09-17",
+1397.92
+]
+]
+},
+{
+"code": "GOLD",
+"name": "Gold price",
+"grp": "Inflation and prices",
+"unit": "US$/oz",
+"freq": "monthly",
+"source": "Market data (weekly KPI report)",
+"source_url": null,
+"better": "none",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-11-30",
+2845.5
+],
+[
+"2025-12-31",
+3142.9
+],
+[
+"2026-01-31",
+4500.6
+],
+[
+"2026-02-28",
+4876.74
+],
+[
+"2026-03-31",
+5045.82
+],
+[
+"2026-04-30",
+4755.9
+],
+[
+"2026-05-31",
+4540.0
+],
+[
+"2026-06-30",
+4324.69
+],
+[
+"2026-07-31",
+4030.9
+],
+[
+"2026-08-31",
+4132.2
+],
+[
+"2026-09-17",
+4450.8
+]
+]
+},
+{
+"code": "POWER_HWANGE",
+"name": "Power generation: Hwange",
+"grp": "Energy and fuel",
+"unit": "MW",
+"freq": "weekly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-17",
+990
+]
+]
+},
+{
+"code": "POWER_KARIBA",
+"name": "Power generation: Kariba",
+"grp": "Energy and fuel",
+"unit": "MW",
+"freq": "weekly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-17",
+550
+]
+]
+},
+{
+"code": "POWER_IPP",
+"name": "Power generation: IPPs",
+"grp": "Energy and fuel",
+"unit": "MW",
+"freq": "weekly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-17",
+75
+]
+]
+},
+{
+"code": "POWER_GEN",
+"name": "Local power generation",
+"grp": "Energy and fuel",
+"unit": "MW",
+"freq": "weekly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-17",
+1615
+]
+]
+},
+{
+"code": "POWER_DEMAND",
+"name": "Power demand",
+"grp": "Energy and fuel",
+"unit": "MW",
+"freq": "weekly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-17",
+2200
+]
+]
+},
+{
+"code": "POWER_COVER",
+"name": "Share of demand met by local generation",
+"grp": "Energy and fuel",
+"unit": "%",
+"freq": "weekly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-17",
+73.4
+]
+]
+},
+{
+"code": "FCY_IN",
+"name": "Foreign-currency inflows / receipts",
+"grp": "Energy and fuel",
+"unit": "US$ bn",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-31",
+4.97
+],
+[
+"2026-06-30",
+5.75
+]
+]
+},
+{
+"code": "FCY_PAY",
+"name": "Foreign-currency payments",
+"grp": "Energy and fuel",
+"unit": "US$ bn",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-31",
+3.32
+],
+[
+"2026-06-30",
+3.98
+]
+]
+},
+{
+"code": "FCY_NET",
+"name": "Foreign-currency net surplus",
+"grp": "Energy and fuel",
+"unit": "US$ bn",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-31",
+1.65
+],
+[
+"2026-06-30",
+1.77
+]
+]
+},
+{
+"code": "FUEL_PETROL",
+"name": "Petrol pump price",
+"grp": "Energy and fuel",
+"unit": "US$/litre",
+"freq": "weekly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "down",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-04",
+1.71
+],
+[
+"2026-03-18",
+2.17
+],
+[
+"2026-05-05",
+2.08
+],
+[
+"2026-06-11",
+2.08
+],
+[
+"2026-06-18",
+2.08
+],
+[
+"2026-06-23",
+1.98
+],
+[
+"2026-07-08",
+1.98
+],
+[
+"2026-07-15",
+1.93
+],
+[
+"2026-07-24",
+1.96
+],
+[
+"2026-08-05",
+1.96
+]
+]
+},
+{
+"code": "FUEL_DIESEL",
+"name": "Diesel pump price",
+"grp": "Energy and fuel",
+"unit": "US$/litre",
+"freq": "weekly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "down",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-04",
+1.77
+],
+[
+"2026-03-18",
+2.05
+],
+[
+"2026-05-05",
+2.09
+],
+[
+"2026-06-11",
+2.09
+],
+[
+"2026-06-18",
+2.09
+],
+[
+"2026-06-23",
+1.99
+],
+[
+"2026-07-08",
+1.99
+],
+[
+"2026-07-15",
+1.87
+],
+[
+"2026-07-24",
+1.95
+],
+[
+"2026-08-05",
+1.95
+]
+]
+},
+{
+"code": "FUELQ_DIESEL",
+"name": "Fuel consumption growth year on year: Diesel",
+"grp": "Energy and fuel",
+"unit": "%",
+"freq": "quarterly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-31",
+20.2
+]
+]
+},
+{
+"code": "FUELQ_JETA1",
+"name": "Fuel consumption growth year on year: Jet A1",
+"grp": "Energy and fuel",
+"unit": "%",
+"freq": "quarterly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-31",
+19.4
+]
+]
+},
+{
+"code": "FUELQ_LPG",
+"name": "Fuel consumption growth year on year: LPG",
+"grp": "Energy and fuel",
+"unit": "%",
+"freq": "quarterly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-31",
+4.5
+]
+]
+},
+{
+"code": "FUELQ_PETROL",
+"name": "Fuel consumption growth year on year: Petrol",
+"grp": "Energy and fuel",
+"unit": "%",
+"freq": "quarterly",
+"source": "ZERA",
+"source_url": "https://www.zera.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-31",
+-6.5
+]
+]
+},
+{
+"code": "FXD_GBP",
+"name": "ZiG per GBP (daily)",
+"grp": "Currency and markets",
+"unit": "ZWG",
+"freq": "daily",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 3,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-02",
+36.0752
+],
+[
+"2026-09-03",
+35.9695
+],
+[
+"2026-09-06",
+35.949
+],
+[
+"2026-09-07",
+36.2863
+]
+]
+},
+{
+"code": "FXD_BWP",
+"name": "ZiG per BWP (daily)",
+"grp": "Currency and markets",
+"unit": "ZWG",
+"freq": "daily",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 3,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-02",
+1.9066
+],
+[
+"2026-09-03",
+1.9897
+],
+[
+"2026-09-06",
+1.894
+],
+[
+"2026-09-07",
+1.9205
+]
+]
+},
+{
+"code": "FX_EUR",
+"name": "ZiG per EUR (daily)",
+"grp": "Currency and markets",
+"unit": "ZWG",
+"freq": "daily",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 3,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-02",
+30.9403
+],
+[
+"2026-09-03",
+30.9132
+],
+[
+"2026-09-06",
+30.8856
+],
+[
+"2026-09-07",
+31.177
+]
+]
+},
+{
+"code": "M1",
+"name": "M1 (narrow money), ZWG million",
+"grp": "Money and credit",
+"unit": "ZWG m",
+"freq": "monthly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-12-31",
+91915.0
+],
+[
+"2026-01-31",
+91847.49
+],
+[
+"2026-02-28",
+94960.46
+],
+[
+"2026-03-31",
+102536.0
+],
+[
+"2026-04-30",
+107860.64
+],
+[
+"2026-05-31",
+120397.94
+],
+[
+"2026-06-30",
+120024.88
+]
+]
+},
+{
+"code": "M2",
+"name": "M2 (broad money), ZWG million",
+"grp": "Money and credit",
+"unit": "ZWG m",
+"freq": "monthly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-12-31",
+107681.91
+],
+[
+"2026-01-31",
+107839.71
+],
+[
+"2026-02-28",
+111358.72
+],
+[
+"2026-03-31",
+119314.2
+],
+[
+"2026-04-30",
+126249.91
+],
+[
+"2026-05-31",
+140664.09
+],
+[
+"2026-06-30",
+141501.48
+]
+]
+},
+{
+"code": "M3",
+"name": "M3 (broad money), ZWG million",
+"grp": "Money and credit",
+"unit": "ZWG m",
+"freq": "monthly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-01-31",
+108915.12
+],
+[
+"2026-02-28",
+112264.22
+],
+[
+"2026-03-31",
+119838.71
+],
+[
+"2026-04-30",
+126714.35
+],
+[
+"2026-05-31",
+141141.03
+],
+[
+"2026-06-30",
+142010.22
+]
+]
+},
+{
+"code": "FX_INTERBANK",
+"name": "Official interbank rate (ZWG per US$1)",
+"grp": "Currency and markets",
+"unit": "ZWG",
+"freq": "monthly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-04-30",
+26.81
+],
+[
+"2025-05-31",
+26.72
+],
+[
+"2025-06-30",
+26.97
+],
+[
+"2025-07-31",
+26.8
+],
+[
+"2025-08-31",
+26.8
+],
+[
+"2025-09-30",
+26.74
+],
+[
+"2025-10-31",
+26.72
+],
+[
+"2025-11-30",
+26.0
+],
+[
+"2025-12-31",
+26.61
+],
+[
+"2026-01-31",
+25.74
+],
+[
+"2026-02-28",
+25.56
+],
+[
+"2026-03-31",
+25.59
+],
+[
+"2026-04-30",
+25.97
+],
+[
+"2026-05-31",
+26.8
+],
+[
+"2026-06-30",
+26.5
+],
+[
+"2026-07-31",
+26.96
+],
+[
+"2026-08-31",
+26.63
+],
+[
+"2026-09-17",
+26.85
+]
+]
+},
+{
+"code": "FX_PARALLEL",
+"name": "Parallel market rate (ZWG per US$1)",
+"grp": "Currency and markets",
+"unit": "ZWG",
+"freq": "monthly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-04-30",
+33.0
+],
+[
+"2025-05-31",
+33.0
+],
+[
+"2025-06-30",
+34.0
+],
+[
+"2025-07-31",
+34.0
+],
+[
+"2025-08-31",
+34.0
+],
+[
+"2025-09-30",
+33.0
+],
+[
+"2025-10-31",
+33.0
+],
+[
+"2025-11-30",
+35.0
+],
+[
+"2025-12-31",
+34.0
+],
+[
+"2026-01-31",
+33.0
+],
+[
+"2026-02-28",
+33.0
+],
+[
+"2026-03-31",
+34.0
+],
+[
+"2026-04-30",
+33.0
+],
+[
+"2026-05-31",
+34.0
+],
+[
+"2026-06-30",
+33.0
+],
+[
+"2026-07-31",
+33.0
+],
+[
+"2026-08-31",
+33.0
+],
+[
+"2026-09-17",
+33.0
+]
+]
+},
+{
+"code": "FX_PREMIUM",
+"name": "Parallel market premium over interbank",
+"grp": "Currency and markets",
+"unit": "%",
+"freq": "monthly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "down",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-04-30",
+23.1
+],
+[
+"2025-05-31",
+23.5
+],
+[
+"2025-06-30",
+26.1
+],
+[
+"2025-07-31",
+26.9
+],
+[
+"2025-08-31",
+26.9
+],
+[
+"2025-09-30",
+23.4
+],
+[
+"2025-10-31",
+23.5
+],
+[
+"2025-11-30",
+34.6
+],
+[
+"2025-12-31",
+27.8
+],
+[
+"2026-01-31",
+28.2
+],
+[
+"2026-02-28",
+29.1
+],
+[
+"2026-03-31",
+32.9
+],
+[
+"2026-04-30",
+27.1
+],
+[
+"2026-05-31",
+26.9
+],
+[
+"2026-06-30",
+24.5
+],
+[
+"2026-07-31",
+22.4
+],
+[
+"2026-08-31",
+23.9
+],
+[
+"2026-09-17",
+22.9
+]
+]
+},
+{
+"code": "ZSE_CAP",
+"name": "ZSE market capitalisation",
+"grp": "Currency and markets",
+"unit": "US$ bn",
+"freq": "monthly",
+"source": "ZSE",
+"source_url": "https://www.zse.co.zw",
+"better": "up",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-12-31",
+3.26
+],
+[
+"2026-01-31",
+3.4
+],
+[
+"2026-02-28",
+3.1
+],
+[
+"2026-03-31",
+2.85
+],
+[
+"2026-04-30",
+2.58
+],
+[
+"2026-05-31",
+2.73
+],
+[
+"2026-06-30",
+3.38
+],
+[
+"2026-07-31",
+4.05
+],
+[
+"2026-08-31",
+4.03
+],
+[
+"2026-09-17",
+3.76
+]
+]
+},
+{
+"code": "VFEX_CAP",
+"name": "VFEX market capitalisation",
+"grp": "Currency and markets",
+"unit": "US$ bn",
+"freq": "monthly",
+"source": "VFEX",
+"source_url": "https://www.vfex.exchange",
+"better": "up",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-12-31",
+2.1
+],
+[
+"2026-01-31",
+2.49
+],
+[
+"2026-02-28",
+2.85
+],
+[
+"2026-03-31",
+3.15
+],
+[
+"2026-04-30",
+3.53
+],
+[
+"2026-05-31",
+3.78
+],
+[
+"2026-06-30",
+3.71
+],
+[
+"2026-07-31",
+4.1
+],
+[
+"2026-08-31",
+8.4
+],
+[
+"2026-09-17",
+8.05
+]
+]
+},
+{
+"code": "MERCHANTS",
+"name": "Mobile banking merchants",
+"grp": "Payments sector",
+"unit": "count",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+55971.0
+],
+[
+"2025-12-31",
+56814.0
+],
+[
+"2026-03-31",
+57098.0
+],
+[
+"2026-06-30",
+57384.0
+]
+]
+},
+{
+"code": "ATMS",
+"name": "ATMs",
+"grp": "Payments sector",
+"unit": "count",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+432.0
+],
+[
+"2025-12-31",
+502.0
+],
+[
+"2026-03-31",
+507.0
+],
+[
+"2026-06-30",
+511.0
+]
+]
+},
+{
+"code": "POS",
+"name": "POS devices",
+"grp": "Payments sector",
+"unit": "count",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+127042.0
+],
+[
+"2025-12-31",
+160212.0
+],
+[
+"2026-03-31",
+155518.0
+],
+[
+"2026-06-30",
+156664.0
+]
+]
+},
+{
+"code": "CARD_1",
+"name": "Debit cards",
+"grp": "Payments sector",
+"unit": "count",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+5622600.0
+],
+[
+"2025-12-31",
+6162440.0
+],
+[
+"2026-03-31",
+6449887.0
+],
+[
+"2026-06-30",
+6790330.0
+]
+]
+},
+{
+"code": "CARD_2",
+"name": "Credit cards",
+"grp": "Payments sector",
+"unit": "count",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+19925.0
+],
+[
+"2025-12-31",
+694.0
+],
+[
+"2026-03-31",
+705.0
+],
+[
+"2026-06-30",
+711.0
+]
+]
+},
+{
+"code": "CARD_3",
+"name": "Prepaid cards",
+"grp": "Payments sector",
+"unit": "count",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+151140.0
+],
+[
+"2025-12-31",
+183035.0
+],
+[
+"2026-03-31",
+190709.0
+],
+[
+"2026-06-30",
+188797.0
+]
+]
+},
+{
+"code": "CARD_4",
+"name": "Mobile banking subscribers",
+"grp": "Payments sector",
+"unit": "count",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+10099040.0
+],
+[
+"2025-12-31",
+10955086.0
+],
+[
+"2026-03-31",
+10693847.0
+],
+[
+"2026-06-30",
+11246479.0
+]
+]
+},
+{
+"code": "CARD_5",
+"name": "Internet banking subscribers",
+"grp": "Payments sector",
+"unit": "count",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+551716.0
+],
+[
+"2025-12-31",
+600082.0
+],
+[
+"2026-03-31",
+560292.0
+],
+[
+"2026-06-30",
+586010.0
+]
+]
+},
+{
+"code": "MM_LINES_ECONET",
+"name": "Active mobile money lines: Econet",
+"grp": "Payments sector",
+"unit": "lines",
+"freq": "quarterly",
+"source": "POTRAZ",
+"source_url": "https://www.potraz.gov.zw",
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2024-12-31",
+11332804.0
+],
+[
+"2025-03-31",
+11578890.0
+],
+[
+"2025-06-30",
+11782975.0
+],
+[
+"2025-09-30",
+12064749.0
+],
+[
+"2025-12-31",
+12374206.0
+],
+[
+"2026-03-31",
+12926399.0
+]
+]
+},
+{
+"code": "MM_SHARE_ECONET",
+"name": "Mobile money market share: Econet",
+"grp": "Payments sector",
+"unit": "%",
+"freq": "quarterly",
+"source": "POTRAZ",
+"source_url": "https://www.potraz.gov.zw",
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2024-12-31",
+72.3
+],
+[
+"2025-03-31",
+72.9
+],
+[
+"2025-06-30",
+73.2
+],
+[
+"2025-09-30",
+73.4
+],
+[
+"2025-12-31",
+73.8
+],
+[
+"2026-03-31",
+74.8
+]
+]
+},
+{
+"code": "MM_LINES_NETONE",
+"name": "Active mobile money lines: NetOne",
+"grp": "Payments sector",
+"unit": "lines",
+"freq": "quarterly",
+"source": "POTRAZ",
+"source_url": "https://www.potraz.gov.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2024-12-31",
+3963193.0
+],
+[
+"2025-03-31",
+3978177.0
+],
+[
+"2025-06-30",
+3987105.0
+],
+[
+"2025-09-30",
+4062894.0
+],
+[
+"2025-12-31",
+4101492.0
+],
+[
+"2026-03-31",
+4049492.0
+]
+]
+},
+{
+"code": "MM_SHARE_NETONE",
+"name": "Mobile money market share: NetOne",
+"grp": "Payments sector",
+"unit": "%",
+"freq": "quarterly",
+"source": "POTRAZ",
+"source_url": "https://www.potraz.gov.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2024-12-31",
+25.3
+],
+[
+"2025-03-31",
+25.0
+],
+[
+"2025-06-30",
+24.8
+],
+[
+"2025-09-30",
+24.7
+],
+[
+"2025-12-31",
+24.4
+],
+[
+"2026-03-31",
+23.4
+]
+]
+},
+{
+"code": "MM_LINES_TELECEL",
+"name": "Active mobile money lines: Telecel",
+"grp": "Payments sector",
+"unit": "lines",
+"freq": "quarterly",
+"source": "POTRAZ",
+"source_url": "https://www.potraz.gov.zw",
+"better": "none",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2024-12-31",
+381097.0
+],
+[
+"2025-03-31",
+336559.0
+],
+[
+"2025-06-30",
+319548.0
+],
+[
+"2025-09-30",
+305042.0
+],
+[
+"2025-12-31",
+303284.0
+],
+[
+"2026-03-31",
+305243.0
+]
+]
+},
+{
+"code": "MM_SHARE_TELECEL",
+"name": "Mobile money market share: Telecel",
+"grp": "Payments sector",
+"unit": "%",
+"freq": "quarterly",
+"source": "POTRAZ",
+"source_url": "https://www.potraz.gov.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2024-12-31",
+2.4
+],
+[
+"2025-03-31",
+2.1
+],
+[
+"2025-06-30",
+2.0
+],
+[
+"2025-09-30",
+1.9
+],
+[
+"2025-12-31",
+1.8
+],
+[
+"2026-03-31",
+1.8
+]
+]
+},
+{
+"code": "NPL",
+"name": "Non-performing loans ratio",
+"grp": "Money and credit",
+"unit": "%",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "down",
+"target": 5,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2023-12-31",
+2.09
+],
+[
+"2024-03-31",
+2.17
+],
+[
+"2024-06-30",
+2.02
+],
+[
+"2024-09-30",
+3.19
+],
+[
+"2024-12-31",
+3.37
+],
+[
+"2025-03-31",
+3.34
+],
+[
+"2025-06-30",
+2.9
+],
+[
+"2025-09-30",
+3.07
+],
+[
+"2025-12-31",
+3.47
+],
+[
+"2026-01-31",
+3.47
+],
+[
+"2026-03-31",
+3.64
+],
+[
+"2026-06-30",
+3.64
+]
+]
+},
+{
+"code": "POLICY_RATE",
+"name": "Bank policy rate",
+"grp": "Money and credit",
+"unit": "%",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-06-30",
+35.0
+],
+[
+"2025-09-30",
+35.0
+],
+[
+"2025-12-31",
+35.0
+],
+[
+"2026-03-31",
+35.0
+],
+[
+"2026-06-30",
+30.0
+]
+]
+},
+{
+"code": "LENDING_RATE",
+"name": "Average lending rate",
+"grp": "Money and credit",
+"unit": "%",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "down",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-06-30",
+43.0
+],
+[
+"2025-09-30",
+43.1
+],
+[
+"2025-12-31",
+43.5
+],
+[
+"2026-03-31",
+43.7
+],
+[
+"2026-06-30",
+43.9
+]
+]
+},
+{
+"code": "PEG_USDC",
+"name": "USDC price (peg to US$1)",
+"grp": "Currency and markets",
+"unit": "US$",
+"freq": "monthly",
+"source": "Market data (weekly KPI report)",
+"source_url": null,
+"better": "none",
+"target": null,
+"decimals": 4,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-02-28",
+0.9999
+],
+[
+"2026-03-31",
+0.9999
+],
+[
+"2026-04-30",
+0.9998
+],
+[
+"2026-05-31",
+0.9997
+],
+[
+"2026-06-30",
+0.9997
+],
+[
+"2026-07-31",
+0.9998
+],
+[
+"2026-08-31",
+0.9998
+]
+]
+},
+{
+"code": "PEG_USDT",
+"name": "USDT price (peg to US$1)",
+"grp": "Currency and markets",
+"unit": "US$",
+"freq": "monthly",
+"source": "Market data (weekly KPI report)",
+"source_url": null,
+"better": "none",
+"target": null,
+"decimals": 4,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-02-28",
+0.9999
+],
+[
+"2026-03-31",
+0.9999
+],
+[
+"2026-04-30",
+0.9996
+],
+[
+"2026-05-31",
+0.9995
+],
+[
+"2026-06-30",
+0.9991
+],
+[
+"2026-07-31",
+0.9993
+],
+[
+"2026-08-31",
+0.9988
+]
+]
+},
+{
+"code": "PEG_DAI",
+"name": "DAI price (peg to US$1)",
+"grp": "Currency and markets",
+"unit": "US$",
+"freq": "monthly",
+"source": "Market data (weekly KPI report)",
+"source_url": null,
+"better": "none",
+"target": null,
+"decimals": 4,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-02-28",
+1.0002
+],
+[
+"2026-03-31",
+1.0002
+],
+[
+"2026-04-30",
+1.0001
+],
+[
+"2026-05-31",
+1.0
+],
+[
+"2026-06-30",
+1.0
+],
+[
+"2026-07-31",
+1.0001
+],
+[
+"2026-08-31",
+1.0
+]
+]
+},
+{
+"code": "PEG_USDP",
+"name": "USDP price (peg to US$1)",
+"grp": "Currency and markets",
+"unit": "US$",
+"freq": "monthly",
+"source": "Market data (weekly KPI report)",
+"source_url": null,
+"better": "none",
+"target": null,
+"decimals": 4,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-02-28",
+0.9998
+],
+[
+"2026-03-31",
+0.9998
+],
+[
+"2026-04-30",
+0.9997
+],
+[
+"2026-05-31",
+0.9996
+],
+[
+"2026-06-30",
+0.9996
+],
+[
+"2026-07-31",
+0.9997
+],
+[
+"2026-08-31",
+0.9998
+]
+]
+},
+{
+"code": "MM_VOL_SHARE",
+"name": "Mobile money share of national payment volumes",
+"grp": "Payments sector",
+"unit": "%",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+83.0
+],
+[
+"2025-06-30",
+84.8
+],
+[
+"2025-09-30",
+85.7
+],
+[
+"2025-12-31",
+86.7
+],
+[
+"2026-03-31",
+87.2
+],
+[
+"2026-06-30",
+89.1
+]
+]
+},
+{
+"code": "MM_VAL_SHARE",
+"name": "Mobile money share of national payment value",
+"grp": "Payments sector",
+"unit": "%",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+8.6
+],
+[
+"2025-06-30",
+9.8
+],
+[
+"2025-09-30",
+9.7
+],
+[
+"2025-12-31",
+10.5
+],
+[
+"2026-03-31",
+12.4
+],
+[
+"2026-06-30",
+13.0
+]
+]
+},
+{
+"code": "GDP",
+"name": "GDP",
+"grp": "Economy and society",
+"unit": "US$ bn",
+"freq": "annual",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2022-12-31",
+32.79
+],
+[
+"2023-12-31",
+35.23
+],
+[
+"2024-12-31",
+44.19
+],
+[
+"2025-12-31",
+45.3
+]
+]
+},
+{
+"code": "GDP_PROJ",
+"name": "GDP 2026 (projected)",
+"grp": "Economy and society",
+"unit": "US$ bn",
+"freq": "annual",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-09-17",
+52.0
+]
+]
+},
+{
+"code": "EMP_FORMAL",
+"name": "Employment share: formal",
+"grp": "Economy and society",
+"unit": "%",
+"freq": "quarterly",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-30",
+35.8
+]
+]
+},
+{
+"code": "EMP_INFORMAL",
+"name": "Employment share: informal",
+"grp": "Economy and society",
+"unit": "%",
+"freq": "quarterly",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-30",
+58.5
+]
+]
+},
+{
+"code": "EMP_HOUSEHOLD",
+"name": "Employment share: household",
+"grp": "Economy and society",
+"unit": "%",
+"freq": "quarterly",
+"source": "ZIMSTAT",
+"source_url": "https://www.zimstat.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-30",
+5.7
+]
+]
+},
+{
+"code": "UNREST",
+"name": "Civil-unrest severity (event rating, 1 to 5)",
+"grp": "Economy and society",
+"unit": "rating",
+"freq": "monthly",
+"source": "Local news (as in the weekly KPI report)",
+"source_url": null,
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2024-06-16",
+4.0
+],
+[
+"2024-06-24",
+4.0
+],
+[
+"2024-06-27",
+4.0
+],
+[
+"2024-07-01",
+5.0
+],
+[
+"2024-08-09",
+5.0
+],
+[
+"2024-08-17",
+4.0
+],
+[
+"2025-03-31",
+5.0
+],
+[
+"2026-06-01",
+1.0
+]
+]
+},
+{
+"code": "CROP_MAIZE",
+"name": "Harvest: maize (tonnes)",
+"grp": "Economy and society",
+"unit": "tonnes",
+"freq": "annual",
+"source": "Ministry of Agriculture (weekly KPI report)",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-06-30",
+1819819.0
+],
+[
+"2026-06-30",
+2350000.0
+]
+]
+},
+{
+"code": "CROP_TOBACCO",
+"name": "Harvest: tobacco (tonnes)",
+"grp": "Economy and society",
+"unit": "tonnes",
+"freq": "annual",
+"source": "Ministry of Agriculture (weekly KPI report)",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-06-30",
+296042.0
+],
+[
+"2026-06-30",
+378322.0
+]
+]
+},
+{
+"code": "CROP_SORGHUM",
+"name": "Harvest: sorghum (tonnes)",
+"grp": "Economy and society",
+"unit": "tonnes",
+"freq": "annual",
+"source": "Ministry of Agriculture (weekly KPI report)",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-06-30",
+288344.0
+],
+[
+"2026-06-30",
+290216.0
+]
+]
+},
+{
+"code": "CROP_SOYABEANS",
+"name": "Harvest: soyabeans (tonnes)",
+"grp": "Economy and society",
+"unit": "tonnes",
+"freq": "annual",
+"source": "Ministry of Agriculture (weekly KPI report)",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-06-30",
+41919.0
+],
+[
+"2026-06-30",
+96129.0
+]
+]
+},
+{
+"code": "CROP_COTTON",
+"name": "Harvest: cotton (tonnes)",
+"grp": "Economy and society",
+"unit": "tonnes",
+"freq": "annual",
+"source": "Ministry of Agriculture (weekly KPI report)",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-06-30",
+61279.0
+],
+[
+"2026-06-30",
+77212.0
+]
+]
+},
+{
+"code": "REMIT_FY",
+"name": "Inbound remittances, full year",
+"grp": "Economy and society",
+"unit": "US$ bn",
+"freq": "annual",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-12-31",
+2.45
+]
+]
+},
+{
+"code": "REMIT_9M",
+"name": "Inbound remittances, first nine months",
+"grp": "Economy and society",
+"unit": "US$ bn",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 2,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-09-30",
+2.1
+]
+]
+},
+{
+"code": "REMIT_Q",
+"name": "Inbound remittances, quarter",
+"grp": "Economy and society",
+"unit": "US$ bn",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": null,
+"decimals": 3,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-03-31",
+0.3141
+]
+]
+},
+{
+"code": "USD_SETTLE",
+"name": "Share of transactions settled in USD",
+"grp": "Currency and markets",
+"unit": "%",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+62.4
+],
+[
+"2025-06-30",
+58.3
+],
+[
+"2025-09-30",
+62.1
+],
+[
+"2025-12-31",
+63.2
+],
+[
+"2026-03-31",
+63.5
+]
+]
+},
+{
+"code": "ZIG_SETTLE",
+"name": "Share of transactions settled in ZiG",
+"grp": "Currency and markets",
+"unit": "%",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "none",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2025-03-31",
+37.6
+],
+[
+"2025-06-30",
+41.7
+],
+[
+"2025-09-30",
+37.9
+],
+[
+"2025-12-31",
+36.8
+],
+[
+"2026-03-31",
+36.5
+]
+]
+},
+{
+"code": "CAR",
+"name": "Sector capital adequacy ratio",
+"grp": "Money and credit",
+"unit": "%",
+"freq": "quarterly",
+"source": "RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "up",
+"target": 12,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2024-03-31",
+36.98
+],
+[
+"2024-06-30",
+46.15
+],
+[
+"2024-09-30",
+36.96
+],
+[
+"2024-12-31",
+34.89
+],
+[
+"2025-03-31",
+38.14
+],
+[
+"2025-06-30",
+33.81
+],
+[
+"2025-09-30",
+31.71
+],
+[
+"2025-12-31",
+29.69
+],
+[
+"2026-03-31",
+29.13
+],
+[
+"2026-06-30",
+24.13
+]
+]
+},
+{
+"code": "OTP_FRAUD_M",
+"name": "OTP-fraud cases per month",
+"grp": "Fraud and security",
+"unit": "cases",
+"freq": "monthly",
+"source": "FAP / RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-30",
+295.0
+],
+[
+"2026-07-31",
+180.0
+],
+[
+"2026-08-31",
+303.0
+],
+[
+"2026-09-30",
+234.0
+],
+[
+"2026-10-30",
+88.0
+]
+]
+},
+{
+"code": "SIM_SWAP_M",
+"name": "SIM-swap cases per month",
+"grp": "Fraud and security",
+"unit": "cases",
+"freq": "monthly",
+"source": "FAP / RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-30",
+20.0
+],
+[
+"2026-07-31",
+0.0
+],
+[
+"2026-08-31",
+1.0
+],
+[
+"2026-09-30",
+0.0
+],
+[
+"2026-10-30",
+0.0
+]
+]
+},
+{
+"code": "TXN_BILL",
+"name": "Transaction success rate: Bill payment",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 96.17,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+76.1
+]
+]
+},
+{
+"code": "TXN_B2W",
+"name": "Transaction success rate: Bank to wallet",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 67.44,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+59.0
+]
+]
+},
+{
+"code": "TXN_MERCHANT",
+"name": "Transaction success rate: Merchant payment",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 93.0,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+71.9
+]
+]
+},
+{
+"code": "TXN_BALANCE",
+"name": "Transaction success rate: Balance enquiry",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 100.0,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+73.9
+]
+]
+},
+{
+"code": "TXN_RECHARGE_SELF",
+"name": "Transaction success rate: Recharge self",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 90.09,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+82.1
+]
+]
+},
+{
+"code": "TXN_SEND_OTHERS",
+"name": "Transaction success rate: Send money (others)",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 93.92,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+86.8
+]
+]
+},
+{
+"code": "TXN_SEND_MOBILE",
+"name": "Transaction success rate: Send to mobile",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 93.93,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+49.8
+]
+]
+},
+{
+"code": "TXN_SEND_BANK",
+"name": "Transaction success rate: Send to bank",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 93.93,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+62.2
+]
+]
+},
+{
+"code": "TXN_ZESA",
+"name": "Transaction success rate: ZESA payment",
+"grp": "Transaction health",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": 100.0,
+"decimals": 1,
+"internal_key": null,
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+72.7
+]
+]
+},
+{
+"code": "S_ASSESSED",
+"name": "Risks assessed",
+"grp": "Sentinel (internal)",
+"unit": "",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 0,
+"internal_key": "risk.assessed",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_UNASSESSED",
+"name": "Risks waiting for assessment",
+"grp": "Sentinel (internal)",
+"unit": "",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": "risk.unassessed",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_OUTSIDE",
+"name": "Risks outside appetite",
+"grp": "Sentinel (internal)",
+"unit": "",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": "risk.outside_appetite",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_LOA",
+"name": "Portfolio level of assurance",
+"grp": "Sentinel (internal)",
+"unit": "%",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": "risk.loa",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_OVERDUE",
+"name": "Overdue tracker tasks",
+"grp": "Sentinel (internal)",
+"unit": "",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": "tracker.overdue",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_INC_OPEN",
+"name": "Open incidents",
+"grp": "Sentinel (internal)",
+"unit": "",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": "incident.open",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_LOSS_30",
+"name": "Net loss, last 30 days",
+"grp": "Sentinel (internal)",
+"unit": "",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": "incident.net_loss_30d",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_KRI_RED",
+"name": "KRIs in red",
+"grp": "Sentinel (internal)",
+"unit": "",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": "kri.red",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_ACT_OVERDUE",
+"name": "Overdue actions",
+"grp": "Sentinel (internal)",
+"unit": "",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": "action.overdue",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_CTL_EFF",
+"name": "Average control effectiveness",
+"grp": "Sentinel (internal)",
+"unit": "%",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": "control.effectiveness",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "S_CTL_TESTED",
+"name": "Controls tested in the last 12 months",
+"grp": "Sentinel (internal)",
+"unit": "%",
+"freq": "daily",
+"source": "Sentinel",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": "control.tested_pct",
+"kind": "kpi",
+"amber": null,
+"red": null,
+"hidden": 0,
+"readings": []
+},
+{
+"code": "KRI_OTP_M",
+"name": "OTP-fraud cases per month",
+"grp": "Fraud",
+"unit": "cases",
+"freq": "monthly",
+"source": "FAP / RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kri",
+"amber": 250,
+"red": 400,
+"hidden": 0,
+"readings": [
+[
+"2026-06-30",
+295.0
+],
+[
+"2026-07-31",
+180.0
+],
+[
+"2026-08-31",
+303.0
+],
+[
+"2026-09-30",
+234.0
+],
+[
+"2026-10-30",
+88.0
+]
+]
+},
+{
+"code": "KRI_SIMSWAP_M",
+"name": "SIM-swap cases per month",
+"grp": "Fraud",
+"unit": "cases",
+"freq": "monthly",
+"source": "FAP / RBZ",
+"source_url": "https://www.rbz.co.zw",
+"better": "down",
+"target": null,
+"decimals": 0,
+"internal_key": null,
+"kind": "kri",
+"amber": 5,
+"red": 10,
+"hidden": 0,
+"readings": [
+[
+"2026-06-30",
+20.0
+],
+[
+"2026-07-31",
+0.0
+],
+[
+"2026-08-31",
+1.0
+],
+[
+"2026-09-30",
+0.0
+],
+[
+"2026-10-30",
+0.0
+]
+]
+},
+{
+"code": "KRI_MERCH",
+"name": "Merchant payment success rate",
+"grp": "Technology",
+"unit": "%",
+"freq": "weekly",
+"source": "EcoCash transaction monitoring",
+"source_url": null,
+"better": "up",
+"target": null,
+"decimals": 1,
+"internal_key": null,
+"kind": "kri",
+"amber": 93,
+"red": 85,
+"hidden": 0,
+"readings": [
+[
+"2026-06-02",
+71.9
+]
+]
+}
+]
+}
