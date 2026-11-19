@@ -1,0 +1,7 @@
+ECOCASH SENTINEL DEMO: sign-in details (all data is invented)
+
+Reviewers (read-only):   reviewer      password: FNMIaVd?2lz6NIGf
+Full access (can change): demo.head    password: 0kdYCGBoveEs*u3G
+Second approver:          demo.head2   password: g+b#SPv7b&MuM-i5
+Risk Manager:             demo.manager password: 2tmgdt#M+&jf7LmT
+Administrator:            admin        password: 1VVZOso$#+rS4$nQ
