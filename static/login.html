@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoCash Sentinel | Sign in</title>
+<link rel="icon" href="/static/img/favicon.png">
+<link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+<main class="stage" id="stage">
+  <img class="art" src="/static/img/login_bg.jpg" alt="" aria-hidden="true">
+  <section class="card" id="card" aria-live="polite">
+    <img class="brand" src="/static/img/logo_full.png" alt="EcoCash Sentinel">
+    <div class="rule"></div>
+
+    <!-- Sign in -->
+    <form id="v-login" class="view" novalidate autocomplete="on">
+      <div id="banner" class="banner" hidden></div>
+      <label class="field"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>
+        <input id="username" name="username" type="text" placeholder="Username" autocomplete="username" autocapitalize="off" spellcheck="false" aria-label="Username"></label>
+      <label class="field"><span class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+        <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" aria-label="Password">
+        <button type="button" class="eye" data-eye="password" aria-label="Show password"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></label>
+      <div class="row"><label class="chk"><input type="checkbox" id="remember"> Remember my username</label><a href="#" id="go-forgot">Forgot password?</a></div>
+      <button class="btn" id="btn-login" type="submit"><svg viewBox="0 0 24 24"><path d="M10 4H5v16h5M14 8l4 4-4 4M18 12H8"/></svg><span>Login</span></button>
+      <p class="note" id="login-note" hidden></p>
+    </form>
+
+    <!-- Locked -->
+    <div id="v-locked" class="view" hidden>
+      <div class="big lockicon"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none"/></svg></div>
+      <h2>Account locked</h2>
+      <p class="sub">Three failed sign-in attempts. To protect the account it has been locked and the administrator has been told.</p>
+      <div class="banner amber" id="locked-reset-note">If you forgot your password, reset it now with a link sent to your registered e-mail (valid 30 minutes).</div>
+      <button class="btn" id="btn-locked-reset" type="button"><span>Reset password by e-mail</span></button>
+      <button class="btn ghost" id="btn-locked-admin" type="button"><span>Contact the administrator</span></button>
+      <p class="note" id="locked-admin" hidden></p>
+      <p class="note"><a href="#" data-back>Back to sign in</a></p>
+    </div>
+
+    <!-- Choose a new password (forced change, or reset link) -->
+    <form id="v-change" class="view" hidden novalidate>
+      <h2 id="change-title">Create a new password</h2>
+      <div class="banner blue" id="change-note"></div>
+      <div id="banner2" class="banner" hidden></div>
+      <label class="field"><span class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+        <input id="newpw" type="password" placeholder="New password" autocomplete="new-password" aria-label="New password">
+        <button type="button" class="eye" data-eye="newpw" aria-label="Show password"><svg viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button></label>
+      <div class="meter"><i></i><i></i><i></i><i></i><span id="meter-label">Enter a password</span></div>
+      <label class="field"><span class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+        <input id="newpw2" type="password" placeholder="Confirm new password" autocomplete="new-password" aria-label="Confirm new password"></label>
+      <ul class="rules" id="rules"></ul>
+      <button class="btn" id="btn-change" type="submit"><span>Save and continue</span></button>
+      <p class="note"><a href="#" data-back>Back to sign in</a></p>
+    </form>
+
+    <!-- Two-step sign-in: the code from the authenticator app -->
+    <form id="v-mfa" class="view" hidden novalidate>
+      <h2>Two-step sign-in</h2>
+      <div class="banner blue" id="mfa-note">Open your authenticator app and type the 6-digit code shown for Sentinel.</div>
+      <div id="bannermfa" class="banner" hidden></div>
+      <label class="field"><input id="mfacode" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="14" placeholder="6-digit code" aria-label="Verification code"></label>
+      <button class="btn" id="btn-mfa" type="submit"><span>Verify</span></button>
+      <p class="note"><a href="#" id="mfa-rec">Use a recovery code instead</a> &middot; <a href="#" data-back>Back to sign in</a></p>
+    </form>
+
+    <!-- Set up two-step sign-in (required for the role, or chosen by the user) -->
+    <div id="v-enroll" class="view" hidden>
+      <h2>Set up two-step sign-in</h2>
+      <div class="banner blue">Your role requires a second step at sign-in. In your authenticator app (Google or Microsoft Authenticator) choose <b>Add account</b>, then <b>Enter a setup key</b>, and type the key below. Then enter the 6-digit code the app shows.</div>
+      <div id="bannerenroll" class="banner" hidden></div>
+      <div id="enroll-setup">
+        <div class="note" style="margin:8px 0 2px">Setup key</div>
+        <div id="enroll-key" style="font-family:Consolas,monospace;font-size:20px;letter-spacing:.06em;padding:10px 12px;background:#F2F5FA;border-radius:8px;word-break:break-all"></div>
+        <label class="field" style="margin-top:12px"><input id="enrollcode" type="text" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="6-digit code" aria-label="Code from the app"></label>
+        <button class="btn" id="btn-enroll" type="button"><span>Turn on</span></button>
+      </div>
+      <div id="enroll-codes" hidden>
+        <div class="banner amber">Two-step sign-in is on. <b>Save these recovery codes now</b>: each works once if you lose your phone. They are not shown again.</div>
+        <div id="enroll-list" style="font-family:Consolas,monospace;font-size:16px;line-height:1.9;columns:2;padding:8px 12px;background:#F2F5FA;border-radius:8px"></div>
+        <button class="btn" id="btn-enroll-done" type="button"><span>I have saved them: continue</span></button>
+      </div>
+      <p class="note"><a href="#" data-back>Back to sign in</a></p>
+    </div>
+
+    <!-- Forgot -->
+    <form id="v-forgot" class="view" hidden novalidate>
+      <h2>Reset your password</h2>
+      <p class="sub">Enter your username or e-mail and we will send a reset link.</p>
+      <div id="banner3" class="banner" hidden></div>
+      <label class="field"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span>
+        <input id="ident" type="text" placeholder="Username or e-mail" autocomplete="username" autocapitalize="off" aria-label="Username or e-mail"></label>
+      <button class="btn" id="btn-forgot" type="submit"><span>Send reset link</span></button>
+      <p class="note">The link is valid for 30 minutes and works once. If an administrator created your account, the administrator can also reset your password.</p>
+      <p class="note"><a href="#" data-back>Back to sign in</a></p>
+    </form>
+    <svg class="swoosh" viewBox="0 0 400 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90 C120 70 250 40 400 10 L400 90Z" fill="#1F5FD0" opacity=".9"/><path d="M60 90 C190 74 300 48 400 26 L400 40 C300 62 190 86 60 90Z" fill="#E31B23"/></svg>
+  </section>
+</main>
+<noscript><p style="color:#fff;text-align:center">JavaScript is required to use Sentinel.</p></noscript>
+<script src="/static/js/login.js"></script>
+</body>
+</html>
